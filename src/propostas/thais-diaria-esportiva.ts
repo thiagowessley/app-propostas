@@ -1,5 +1,5 @@
 import type { PropostaData } from '../types/proposta'
-import { SOBRE_PADRAO, encerramentoPadrao } from '../lib/copy-padrao'
+import { SOBRE_PADRAO, encerramentoPadrao, regraAlteracaoVideo, prazoAlteracaoVideo } from '../lib/copy-padrao'
 
 export const thaisDiariaEsportiva: PropostaData = {
   slug: 'thais-diaria-esportiva',
@@ -175,6 +175,7 @@ export const thaisDiariaEsportiva: PropostaData = {
       { texto: 'A diária mensal é agendada com antecedência mínima de 5 dias úteis, conforme disponibilidade.', bold: 'antecedência mínima de 5 dias úteis' },
       { texto: 'Os primeiros vídeos são entregues já na primeira semana após a diária; o restante segue em edição e chega ao longo do mês.', bold: 'já na primeira semana' },
       { texto: 'A diária extra segue o fluxo normal de edição, somando ao restante do lote do mês, sem prazo acelerado.', bold: 'fluxo normal de edição' },
+      prazoAlteracaoVideo(),
     ],
     contrato: [
       {
@@ -194,7 +195,7 @@ export const thaisDiariaEsportiva: PropostaData = {
           'Diária fora de Joinville e região: valor ajustado conforme deslocamento, combinado à parte.',
           'A trilha sonora usada nas edições é licenciada, sem risco de direito autoral. Uma vez aprovada, não pode ser trocada sem orçamento novo.',
           'O roteiro e a mensagem de cada patrocinador são de responsabilidade de quem contrata.',
-          'Cada vídeo tem direito a 1 rodada de ajuste, limitada a corte de fala já gravada e ajuste de legenda. Nova captação, nova cena ou troca de trilha são orçadas à parte.',
+          regraAlteracaoVideo(1),
         ],
       },
     ],

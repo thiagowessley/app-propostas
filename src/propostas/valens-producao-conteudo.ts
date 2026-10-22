@@ -1,5 +1,5 @@
 import type { PropostaData } from '../types/proposta'
-import { SOBRE_PADRAO, encerramentoPadrao } from '../lib/copy-padrao'
+import { SOBRE_PADRAO, encerramentoPadrao, regraAlteracaoVideo, prazoAlteracaoVideo } from '../lib/copy-padrao'
 
 // Cobertura completa de conteúdo (captação + edição). A edição de material já gravado
 // é outro serviço, com proposta própria: valens-edicao-video.
@@ -181,6 +181,7 @@ export const valensProducaoConteudo: PropostaData = {
       { texto: 'A diária mensal é agendada com antecedência mínima de 5 dias úteis, conforme disponibilidade.', bold: 'antecedência mínima de 5 dias úteis' },
       { texto: 'Os primeiros vídeos são entregues já na primeira semana após a diária; o restante segue em edição e chega ao longo do mês.', bold: 'já na primeira semana' },
       { texto: 'Na diária extra, a entrega é acelerada: todos os vídeos prontos em até 7 dias úteis, sem esperar o restante do mês.', bold: 'entrega é acelerada' },
+      prazoAlteracaoVideo(),
     ],
     contrato: [
       {
@@ -200,7 +201,7 @@ export const valensProducaoConteudo: PropostaData = {
           'Diária fora de Joinville e região: valor ajustado conforme deslocamento, combinado à parte.',
           'A trilha sonora usada nas edições é licenciada, sem risco de direito autoral. Uma vez aprovada, não pode ser trocada sem orçamento novo.',
           'O roteiro e o conteúdo técnico de cada vídeo (Método Pulsar, metodologia, pautas) são de responsabilidade da Valens.',
-          'Cada vídeo tem direito a 1 rodada de ajuste, limitada a corte de fala já gravada e ajuste de legenda. Nova captação, nova cena ou troca de trilha são orçadas à parte.',
+          regraAlteracaoVideo(1),
         ],
       },
     ],

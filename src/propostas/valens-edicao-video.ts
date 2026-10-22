@@ -1,5 +1,5 @@
 import type { PropostaData } from '../types/proposta'
-import { SOBRE_PADRAO, encerramentoPadrao } from '../lib/copy-padrao'
+import { SOBRE_PADRAO, encerramentoPadrao, regraAlteracaoVideo, resumoAlteracaoVideo, prazoAlteracaoVideo } from '../lib/copy-padrao'
 
 // Só edição, sobre material que a Valens já grava. A cobertura completa, com diária
 // de captação, é outro serviço, com proposta própria: valens-producao-conteudo.
@@ -139,7 +139,7 @@ export const valensEdicaoVideo: PropostaData = {
           'Corte, ritmo, legenda, correção de cor e transição',
           'Pacote de até 10 vídeos por mês',
           'Entrega em MP4, pronta pra postar',
-          '2 rodadas de ajuste por vídeo (corte de fala e legenda)',
+          resumoAlteracaoVideo(2),
           'Sem diária de captação: o material bruto é enviado por vocês',
         ],
         valor: 247,
@@ -155,7 +155,7 @@ export const valensEdicaoVideo: PropostaData = {
           'Tudo da edição básica, mais efeitos sonoros, animação e b-roll (imagem própria ou de banco, quando não houver material de apoio)',
           'Pacote de até 10 vídeos por mês',
           'Entrega em MP4, pronta pra postar',
-          '2 rodadas de ajuste por vídeo (corte de fala e legenda)',
+          resumoAlteracaoVideo(2),
           'Sem diária de captação: o material bruto é enviado por vocês',
         ],
         valor: 697,
@@ -168,6 +168,7 @@ export const valensEdicaoVideo: PropostaData = {
       { texto: 'O prazo de entrega é de até 7 dias úteis por lote de até 10 vídeos, contado a partir do recebimento do material bruto.', bold: 'até 7 dias úteis' },
       { texto: 'Os primeiros vídeos do lote são entregues já na primeira semana; o restante segue em edição e chega ao longo do ciclo.', bold: 'já na primeira semana' },
       { texto: 'Vídeo avulso fora do pacote mensal segue o mesmo prazo de até 7 dias úteis, contado a partir do envio individual.', bold: 'até 7 dias úteis' },
+      prazoAlteracaoVideo(),
     ],
     contrato: [
       {
@@ -184,7 +185,7 @@ export const valensEdicaoVideo: PropostaData = {
         itens: [
           'A qualidade de áudio e imagem do material bruto enviado é de responsabilidade da Valens.',
           'A trilha sonora usada nas edições é licenciada, sem risco de direito autoral. Uma vez aprovada, não pode ser trocada sem orçamento novo.',
-          'Cada vídeo tem direito a 2 rodadas de ajuste, limitadas a corte de fala já gravada e ajuste de legenda. Nova captação, nova cena ou troca de trilha são orçadas à parte.',
+          regraAlteracaoVideo(2),
           'Capa e thumbnail de vídeo não estão inclusos no escopo de edição, são orçados à parte.',
         ],
       },
@@ -235,6 +236,10 @@ export const valensEdicaoVideo: PropostaData = {
       {
         pergunta: 'Existe fidelidade no contrato?',
         resposta: 'Não. Os dois pacotes são sem permanência contratada nem multa de cancelamento.',
+      },
+      {
+        pergunta: 'Dá pra pedir alteração depois de pronto?',
+        resposta: regraAlteracaoVideo(2),
       },
     ],
     primeiros_30_dias: [

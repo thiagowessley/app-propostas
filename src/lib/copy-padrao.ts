@@ -50,9 +50,31 @@ export const ENTREGA_COBERTURA_PADRAO =
   'A entrega padrão inclui até 20 fotos editadas, um aftermovie de até 1:00 min, cortes para redes e arquivo no Flickr institucional.'
 
 /**
- * Prazo de devolucao da rodada de ajuste em edicao de video (CLAUDE.md secao 06,
- * definido 16/10/2026). Usar em toda proposta de edicao de video e diaria de conteudo,
- * para o cliente nao precisar perguntar o prazo de alteracao depois.
+ * Regra de alteracao de video em texto unico (CLAUDE.md secao 06, definido
+ * 16/10/2026, caso Thais Joris). Fonte unica: mudar aqui muda em toda proposta
+ * de video. `rodadas` e 2 nas propostas de edicao que o cliente ja viu, e 1 no
+ * padrao novo.
  */
-export const PRAZO_AJUSTE_EDICAO =
-  'Cada vídeo tem 2 rodadas de ajuste (corte de fala e legenda), com retorno em até 2 dias úteis por rodada.'
+export const PRAZO_PEDIDO_AJUSTE_DIAS = 7
+export const PRAZO_DEVOLUCAO_AJUSTE_DIAS_UTEIS = 2
+
+/** Frase completa, para bloco de contrato e resposta de FAQ. */
+export function regraAlteracaoVideo(rodadas: number) {
+  const plural = rodadas === 1 ? 'rodada' : 'rodadas'
+  const limite = rodadas === 1 ? 'limitada' : 'limitadas'
+  return `Cada vídeo tem direito a ${rodadas} ${plural} de ajuste, ${limite} a corte de fala já gravada e ajuste de legenda. O pedido é feito em até ${PRAZO_PEDIDO_AJUSTE_DIAS} dias corridos após a entrega, e a correção volta em até ${PRAZO_DEVOLUCAO_AJUSTE_DIAS_UTEIS} dias úteis. Nova cena, nova captação ou troca de trilha são orçadas à parte.`
+}
+
+/** Item curto, para bullet de plano. */
+export function resumoAlteracaoVideo(rodadas: number) {
+  const plural = rodadas === 1 ? 'rodada' : 'rodadas'
+  return `${rodadas} ${plural} de ajuste por vídeo (corte de fala e legenda)`
+}
+
+/** Item pronto para a lista `prazos` de qualquer proposta de video. */
+export function prazoAlteracaoVideo() {
+  return {
+    texto: `O pedido de ajuste é feito em até ${PRAZO_PEDIDO_AJUSTE_DIAS} dias corridos após a entrega, e a correção volta em até ${PRAZO_DEVOLUCAO_AJUSTE_DIAS_UTEIS} dias úteis.`,
+    bold: `até ${PRAZO_PEDIDO_AJUSTE_DIAS} dias corridos`,
+  }
+}

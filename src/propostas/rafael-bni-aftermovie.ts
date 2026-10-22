@@ -1,5 +1,5 @@
 import type { PropostaData } from '../types/proposta'
-import { SOBRE_PADRAO, encerramentoPadrao } from '../lib/copy-padrao'
+import { SOBRE_PADRAO, encerramentoPadrao, regraAlteracaoVideo } from '../lib/copy-padrao'
 
 export const rafaelBniAftermovie: PropostaData = {
   slug: 'rafael-bni-aftermovie',
@@ -86,6 +86,7 @@ export const rafaelBniAftermovie: PropostaData = {
       { texto: 'A captação ocorre no dia da apresentação, mediante confirmação prévia de horário e local.', bold: 'confirmação prévia de horário e local' },
       { texto: 'A entrega do aftermovie final costuma sair logo após o evento. O prazo de até 7 dias úteis é uma garantia, não o padrão.', bold: 'até 7 dias úteis é uma garantia, não o padrão' },
       { texto: 'Alterações no roteiro do aftermovie após a edição finalizada são orçadas à parte.', bold: 'orçadas à parte' },
+      { texto: regraAlteracaoVideo(1), bold: '1 rodada de ajuste' },
     ],
     contrato: [
       {
