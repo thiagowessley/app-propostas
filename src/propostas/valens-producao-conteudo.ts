@@ -52,8 +52,8 @@ export const valensProducaoConteudo: PropostaData = {
   segmento: 'Aceleradora de negócios femininos, Joinville/SC',
   servico: 'Cobertura Completa de Conteúdo em Vídeo',
   responsavel: 'Tamyres Petry',
-  validade: '2026-10-20',
-  envio: '2026-10-13',
+  validade: '2026-10-29',
+  envio: '2026-10-22',
   intro_capa: 'Esta proposta apresenta a cobertura completa de conteúdo em vídeo pro Instagram da Valens Academy: uma diária de captação de até 4 horas por mês e a edição de cada vídeo, com escopo, processo, prazos, condições e investimento. A edição de material que a Valens já grava é um serviço à parte, com proposta própria.',
   valor: {
     principal: 797,

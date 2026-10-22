@@ -52,8 +52,8 @@ export const valensEdicaoVideo: PropostaData = {
   segmento: 'Aceleradora de negócios femininos, Joinville/SC',
   servico: 'Edição de Vídeo',
   responsavel: 'Tamyres Petry',
-  validade: '2026-10-20',
-  envio: '2026-10-13',
+  validade: '2026-10-29',
+  envio: '2026-10-22',
   intro_capa: 'Esta proposta apresenta os dois pacotes de edição de vídeo pro Instagram da Valens Academy, sobre material que a Valens já grava, com escopo, processo, prazos, condições e investimento. A cobertura completa, com diária de captação, é um serviço à parte, com proposta própria.',
   valor: {
     principal: 247,
