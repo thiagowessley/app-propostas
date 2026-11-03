@@ -104,7 +104,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         ],
         valor: 2686.5,
         periodo: 'multa de saída',
-        rodape: 'Nove mensalidades de novembro de 2026 a julho de 2027',
+        rodape: 'Novembro de 2026 a julho de 2027',
       },
     ],
     prazos: [
