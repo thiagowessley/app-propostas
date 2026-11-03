@@ -55,7 +55,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
       {
         numero: '01',
         titulo: 'A diária de outubro',
-        periodo: 'ENTRE 9 E 19 DE NOVEMBRO',
+        periodo: 'ENTRE 6 E 19 DE NOVEMBRO',
         itens: [
           { titulo: 'O que já está pago', descricao: 'A diária de outubro de 2026 foi paga e não foi realizada. Ela acontece antes da sua mudança, sem custo adicional.', resultado: 'Outubro fecha sem pendência' },
           { titulo: 'A captação do dia', descricao: 'Um dia de gravação no seu espaço, com o material que você já separou, no mesmo formato das diárias anteriores.' },
@@ -108,7 +108,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
       },
     ],
     prazos: [
-      { texto: 'A diária de outubro é realizada entre 9 e 19 de novembro, antes da sua mudança.', bold: 'entre 9 e 19 de novembro' },
+      { texto: 'A diária de outubro é realizada entre 6 e 19 de novembro, antes da sua mudança.', bold: 'entre 6 e 19 de novembro' },
       { texto: 'Na edição mensal, a entrega é de até 10 dias úteis por lote recebido.', bold: 'até 10 dias úteis' },
       { texto: 'Cada vídeo tem uma rodada de alteração, pedida em até 7 dias corridos após a entrega e devolvida em até 2 dias úteis.', bold: 'uma rodada de alteração' },
       { texto: 'Assinando o contrato de edição de 12 meses, a multa do contrato atual deixa de existir.', bold: 'deixa de existir' },
