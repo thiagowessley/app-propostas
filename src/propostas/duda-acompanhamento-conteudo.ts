@@ -120,8 +120,8 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         titulo: 'A diária de outubro',
         itens: [
           'A diária de outubro de 2026 já foi paga e não foi realizada. Ela acontece em novembro, sem cobrança adicional.',
-          'A realização dessa diária em novembro compensa a mensalidade de novembro de 2026. Nenhuma das duas partes deve nada uma à outra por esse mês.',
-          'Não sendo realizada até 19 de novembro de 2026, o valor de R$ 597,00 é convertido em crédito de edição ou devolvido, à escolha da CONTRATANTE, e a mensalidade de novembro permanece devida.',
+          'A entrega dessa diária em novembro e a mensalidade de novembro de 2026 se anulam: você não paga novembro, e eu entrego a diária que já estava paga. Nenhuma das partes fica devendo nada por esse mês.',
+          'Não sendo realizada até 19 de novembro de 2026, o valor de R$ 597,00 é convertido em crédito de edição ou devolvido, à escolha da CONTRATANTE, e a mensalidade de novembro volta a ser devida.',
         ],
       },
       {
@@ -143,7 +143,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
     ],
     pagamento: {
       blocos: [
-        { titulo: 'Diária de outubro', descricao: 'Já paga na mensalidade de outubro de 2026. Nada a pagar pela realização em novembro.' },
+        { titulo: 'Diária de outubro', descricao: 'Já paga em outubro de 2026. A entrega em novembro substitui a cobrança da mensalidade de novembro, então não há nada a pagar.' },
         { titulo: 'Contrato de edição', descricao: 'R$ 397 por mês, cobrados até o 5º dia útil de cada mês, com nota fiscal.' },
         { titulo: 'Encerramento', descricao: 'Multa de 50% das mensalidades restantes do contrato atual, podendo ser parcelada em até 4 vezes.' },
       ],
