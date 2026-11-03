@@ -82,7 +82,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         resumo: 'Contrato de 12 meses, multa zerada',
         itens: [
           'Até 10 vídeos editados por mês',
-          'Corte, ritmo, legenda, correção de cor e transição',
+          'Corte, ritmo, legenda dinâmica, correção de cor e transição',
           'Efeitos sonoros, animação e b-roll',
           'Entrega em MP4, pronta para postar, em até 10 dias úteis por lote',
           'Uma rodada de alteração por vídeo',

@@ -12,7 +12,7 @@ interface Props {
   confidencialidade?: string
 }
 
-function PlanoCard({ plano }: { plano: NonNullable<Props['planos']>[number] }) {
+function PlanoCard({ plano, mostrarVideo = true }: { plano: NonNullable<Props['planos']>[number]; mostrarVideo?: boolean }) {
   return (
     <div className={`plano-card${plano.destaque ? ' destaque' : ''}`} data-colunas={plano.colunasItens}>
       {plano.destaque && <span className="plano-badge">Mais escolhido</span>}
@@ -50,7 +50,7 @@ function PlanoCard({ plano }: { plano: NonNullable<Props['planos']>[number] }) {
           {plano.rodape}
         </p>
       )}
-      {plano.video && (
+      {plano.video && mostrarVideo && (
         <div style={{ marginTop: '24px' }}>
           <div style={{ position: 'relative', width: '100%', aspectRatio: '9 / 16', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border)' }}>
             <iframe
@@ -74,6 +74,8 @@ function PlanoCard({ plano }: { plano: NonNullable<Props['planos']>[number] }) {
 
 export function Financeiro({ valor, planos, primeiros30, confidencialidade }: Props) {
   const temPlanos = planos && planos.length > 0
+  const comVideo = (planos ?? []).filter((p) => p.video)
+  const videoUnico = comVideo.length === 1 ? comVideo[0].video : null
 
   return (
     <AnimatedSection id="financeiro">
@@ -93,9 +95,29 @@ export function Financeiro({ valor, planos, primeiros30, confidencialidade }: Pr
       )}
 
       {temPlanos ? (
-        <div className="planos-grid">
-          {planos!.map((p, i) => <PlanoCard key={i} plano={p} />)}
-        </div>
+        <>
+          <div className="planos-grid">
+            {planos!.map((p, i) => <PlanoCard key={i} plano={p} mostrarVideo={!videoUnico} />)}
+          </div>
+          {videoUnico && (
+            <div style={{ marginTop: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <div style={{ position: 'relative', width: '100%', maxWidth: '260px', aspectRatio: '9 / 16', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border)' }}>
+                <iframe
+                  src={`https://www.youtube.com/embed/${videoUnico.youtubeId}`}
+                  title={videoUnico.label ?? 'Exemplo de edição'}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
+                />
+              </div>
+              {videoUnico.label && (
+                <p style={{ marginTop: '12px', fontSize: '0.75rem', color: 'var(--muted)', textAlign: 'center' }}>
+                  {videoUnico.label}
+                </p>
+              )}
+            </div>
+          )}
+        </>
       ) : (
         <div style={{ maxWidth: '480px', margin: '0 auto', padding: '32px', background: 'var(--bg-card)', border: '1px solid var(--gold)', borderRadius: '18px' }}>
           <ValorHover valor={valor.principal} label="Sua proposta" />
