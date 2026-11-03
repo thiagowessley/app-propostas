@@ -77,7 +77,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
     ],
     planos: [
       {
-        nome: 'Continuar com edição',
+        nome: 'Continuar com edição Avançada',
         destaque: true,
         resumo: 'Contrato de 12 meses, multa zerada',
         itens: [
