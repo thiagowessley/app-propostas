@@ -4,6 +4,7 @@ import { SOBRE_PADRAO, encerramentoPadrao } from '../lib/copy-padrao'
 export const dudaAcompanhamentoConteudo: PropostaData = {
   slug: 'duda-acompanhamento-conteudo',
   estilo: 'dossie',
+  ogImagem: '/og/duda-acompanhamento.jpg',
   dossie: {
     retrato: { src: '/img/portfolio/camila-oliveira.jpg', alt: 'Nutricionista falando direto pra câmera em Reels educativo', largura: 720, altura: 1280, foco: '50% 24%', mira: ['50%', '31%'] },
     galeria: [
@@ -11,7 +12,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
       { src: '/img/portfolio/patricia-gurgel.jpg', alt: 'Especialista em vídeo de depoimento', largura: 405, altura: 720, foco: '50% 30%' },
     ],
     titulo: { fino: 'Conteúdo toda semana,', grosso: 'gravado no seu espaço e editado aqui, com pauta e legenda prontas.' },
-    lede: 'Um acompanhamento mensal para o perfil publicar toda semana sem depender de estúdio, de deslocamento ou de aprender a editar: você grava no seu espaço, envia o material por link e recebe o vídeo pronto, com legenda, calendário e direção.',
+    lede: 'Um acompanhamento mensal para o perfil publicar toda semana sem depender de estúdio nem de deslocamento: você grava no seu espaço e recebe o vídeo pronto, com legenda, calendário e direção.',
     documento: 'Proposta comercial',
     duracao: 'a cada mês',
     base: { provas: [], produtos: [] },
