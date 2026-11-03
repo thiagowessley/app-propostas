@@ -3,50 +3,7 @@ import { SOBRE_PADRAO, encerramentoPadrao } from '../lib/copy-padrao'
 
 export const dudaAcompanhamentoConteudo: PropostaData = {
   slug: 'duda-acompanhamento-conteudo',
-  estilo: 'dossie',
   ogImagem: '/og/duda-acompanhamento.jpg',
-  dossie: {
-    retrato: { src: '/img/portfolio/camila-oliveira.jpg', alt: 'Nutricionista falando direto pra câmera em Reels educativo', largura: 720, altura: 1280, foco: '50% 24%', mira: ['50%', '31%'] },
-    galeria: [
-      { src: '/img/portfolio/natalia-merheb.jpg', alt: 'Especialista em vídeo educativo sobre saúde', largura: 405, altura: 720, foco: '50% 26%' },
-      { src: '/img/portfolio/patricia-gurgel.jpg', alt: 'Especialista em vídeo de depoimento', largura: 405, altura: 720, foco: '50% 30%' },
-    ],
-    titulo: { fino: 'Encerrar bem por aqui,', grosso: 'e seguir publicando com a sua gravação e a minha edição.' },
-    lede: 'Um fechamento em novembro, com as duas últimas diárias e a mentoria para você gravar sozinha, mais dois formatos de edição para seguir de Campinas, mês a mês, sem fidelidade.',
-    documento: 'Proposta comercial',
-    duracao: 'um fechamento, depois todo mês',
-    base: { provas: [], produtos: [] },
-    linha: {
-      titulo: 'Do fechamento à rotina nova',
-      nota: 'Novembro concentra a última captação e a mentoria. De dezembro em diante o ciclo é só edição: você grava no seu espaço, envia por link e recebe pronto.',
-      inicio: 'Diárias e mentoria',
-      fim: 'Edição do mês',
-    },
-    marcos: [
-      { dia: 'Novembro', nome: 'Duas diárias' },
-      { dia: 'Novembro', nome: 'Mentoria de gravação' },
-      { dia: 'Dezembro', nome: 'Só edição' },
-      { dia: 'Cada mês', nome: 'Até 10 vídeos' },
-    ],
-    teste: [
-      { etapa: 'Captação', nome: 'Última diária, presencial' },
-      { etapa: 'Mentoria', nome: 'Você aprende a gravar sozinha' },
-      { etapa: 'Envio', nome: 'Por link, direto do celular' },
-      { etapa: 'Edição', nome: 'Corte, ritmo e legenda' },
-      { etapa: 'Publicação', nome: 'No ritmo que você escolher' },
-    ],
-    videos: [
-      { youtubeId: 'V5lMb2SksPs', titulo: 'Exemplo de edição: Maria Eduarda', poster: '/img/portfolio/camila-oliveira.jpg' },
-    ],
-    paineis: [
-      { tipo: 'teste', titulo: 'Como o fechamento roda', legenda: 'Das duas últimas diárias à mentoria de gravação.' },
-      null,
-      { tipo: 'videos', titulo: 'Padrão de edição', legenda: 'Exemplo de vídeo editado no formato Reels.' },
-    ],
-    secoesExtras: ['sobre'],
-    fecho: 'Uma última diária, a mentoria, e o vídeo seguindo pronto todo mês.',
-    depois: 'Quando passar de 10 vídeos no mês, o próximo degrau é a edição avançada.',
-  },
   cliente: 'Maria Eduarda Longatto',
   segmento: 'Nutricionista, saúde da mulher e saúde capilar',
   servico: 'Edição de Vídeo e Fechamento da Diária',
