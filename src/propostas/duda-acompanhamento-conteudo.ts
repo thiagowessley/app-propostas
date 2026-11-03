@@ -9,7 +9,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
   servico: 'Edição de Vídeo e Fechamento da Diária',
   validade: '2026-11-10',
   envio: '2026-11-03',
-  intro_capa: 'Esta proposta reúne o fechamento de novembro, com as duas últimas diárias e a mentoria de gravação, e os dois formatos de edição para seguir publicando de Campinas.',
+  intro_capa: 'Esta proposta reúne o fechamento de novembro, com as duas últimas diárias e a mentoria de gravação, e o contrato de edição mensal para seguir publicando de Campinas.',
   valor: {
     principal: 997,
     moeda: 'BRL',
@@ -24,7 +24,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
 
   portfolio: {
     intro: [
-      'Os vídeos que estão no ar hoje no seu perfil saíram do mesmo processo de edição que este acompanhamento mantém.',
+      'Os vídeos que estão no ar hoje no seu perfil saíram do mesmo processo de edição que este contrato mantém.',
       'A diferença é que agora o material bruto chega por link, em vez de sair de uma diária presencial.',
       'O padrão de corte, ritmo e legenda continua o mesmo.',
     ],
@@ -48,7 +48,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         'As duas últimas diárias, com material gravado para os meses seguintes',
         'Você gravando sozinha, com enquadramento, luz e som resolvidos',
         'Vídeo editado chegando todo mês, sem fila acumulada',
-        'Nenhum contrato novo com prazo que você ainda não sabe se vai cumprir',
+        'Um contrato com valor e prazo definidos, sem surpresa no meio do caminho',
       ],
     },
     fases: [
@@ -59,7 +59,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         itens: [
           { titulo: 'Diária de outubro', descricao: 'A diária que você já pagou e não usou, feita antes da mudança.', resultado: 'Outubro fecha sem pendência' },
           { titulo: 'Última diária de captação', descricao: 'O último dia de gravação presencial, no seu espaço, antes de você ir.', limite: 'visita única' },
-          { titulo: 'Mentoria de gravação', descricao: 'Quatro horas em dois encontros: onde apoiar o celular, como resolver luz e som, enquadramento e como falar olhando para a lente.', limite: '4 horas, dois encontros', resultado: 'Você grava sozinha no consultório novo' },
+          { titulo: 'Mentoria de gravação', descricao: 'Duas horas em um encontro: onde apoiar o celular, como resolver luz e som, enquadramento e como falar olhando para a lente.', limite: '2 horas, um encontro', resultado: 'Você grava sozinha no consultório novo' },
         ],
         resumo: 'Você sai de Joinville com material gravado e sabendo gravar o próximo',
       },
@@ -69,20 +69,10 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         periodo: 'DEZEMBRO EM DIANTE',
         itens: [
           { titulo: 'Material bruto por link', descricao: 'Você grava no seu espaço e envia pelo endereço que eu criar. Não precisa editar nada.', limite: 'até 10 vídeos por mês' },
-          { titulo: 'Edição e entrega', descricao: 'Corte, ritmo, legenda e cor. O vídeo volta pronto para postar.', limite: 'até 5 dias úteis por lote' },
-          { titulo: 'Sem fidelidade', descricao: 'Mês a mês. No mês em que não houver material, não há cobrança.' },
+          { titulo: 'Edição e entrega', descricao: 'Corte, ritmo, legenda e cor. O vídeo volta pronto para postar.', limite: 'até 14 dias úteis por lote' },
+          { titulo: 'Contrato de 12 meses', descricao: 'Prazo definido, valor fixo e o mesmo padrão de entrega do começo ao fim.' },
         ],
         resumo: 'O perfil publica sem depender de eu estar na cidade',
-      },
-      {
-        numero: '03',
-        titulo: 'Quando o volume crescer',
-        periodo: 'CONFORME A CLÍNICA PEDIR',
-        itens: [
-          { titulo: 'Lote extra', descricao: 'Material acima de 10 vídeos no mês é orçado antes de ser produzido.' },
-          { titulo: 'Edição avançada', descricao: 'Efeitos, animação e imagens de apoio quando o vídeo pedir mais que corte e legenda.' },
-          { titulo: 'Sem surpresa', descricao: 'Nada começa sem valor combinado antes.' },
-        ],
       },
     ],
     planos: [
@@ -93,11 +83,10 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         itens: [
           'A diária de outubro que você já pagou, realizada',
           'A última diária de captação presencial',
-          'Mentoria de gravação: 4 horas em dois encontros',
+          'Mentoria de gravação: 2 horas, em um encontro',
           'Edição do lote das duas diárias, até 20 vídeos',
-          'Entrega em até 5 dias úteis por lote',
+          'Entrega em até 14 dias úteis por lote',
           'Uma rodada de alteração por vídeo',
-          'Encerra o contrato atual sem multa',
         ],
         valor: 997,
         periodo: 'entrega única',
@@ -105,49 +94,36 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
       },
       {
         nome: 'Edição Básica',
-        resumo: 'Vídeo pronto a partir do seu material',
+        resumo: 'Contrato de 12 meses',
         itens: [
           'Até 10 vídeos editados por mês',
           'Corte, ritmo, legenda e cor',
           'Legenda pronta de cada vídeo, com hashtag e chamada',
           'Trilha licenciada, sem risco de direito autoral',
-          'Entrega em até 5 dias úteis por lote',
+          'Entrega em até 14 dias úteis por lote',
           'Uma rodada de alteração por vídeo',
-          'Mês a mês, sem fidelidade',
+          'Contrato de 12 meses, com valor fixo',
+          'Encerra o contrato atual sem multa',
         ],
         valor: 397,
-        periodo: '/mês',
-        rodape: 'Sobre o material que você gravar',
-      },
-      {
-        nome: 'Edição Avançada',
-        resumo: 'Edição com efeitos e animação',
-        itens: [
-          'Tudo da edição básica',
-          'Efeitos, animação e imagens de apoio',
-          'Até 10 vídeos editados por mês',
-          'Entrega em até 5 dias úteis por lote',
-          'Mês a mês, sem fidelidade',
-        ],
-        valor: 697,
         periodo: '/mês',
         rodape: 'Sobre o material que você gravar',
       },
     ],
     prazos: [
       { texto: 'O fechamento acontece em novembro, com as duas diárias na mesma janela, antes da mudança.', bold: 'antes da mudança' },
-      { texto: 'Os vídeos do fechamento são entregues em até 5 dias úteis depois de cada diária.', bold: 'até 5 dias úteis' },
-      { texto: 'Na edição mensal, o prazo é de até 5 dias úteis por lote recebido.', bold: 'por lote recebido' },
+      { texto: 'Os vídeos do fechamento são entregues em até 14 dias úteis depois de cada diária.', bold: 'até 14 dias úteis' },
+      { texto: 'Na edição mensal, o prazo é de até 14 dias úteis por lote recebido.', bold: 'por lote recebido' },
       { texto: 'Cada vídeo tem uma rodada de alteração, pedida em até 7 dias corridos após a entrega e devolvida em até 2 dias úteis.', bold: 'uma rodada de alteração' },
-      { texto: 'A edição mensal não tem fidelidade: o mês sem material não é cobrado.', bold: 'não tem fidelidade' },
+      { texto: 'A multa do contrato atual deixa de existir com a assinatura do contrato de edição de 12 meses.', bold: 'com a assinatura do contrato de edição' },
     ],
     contrato: [
       {
         titulo: 'Escopo e entrega',
         itens: [
-          'O fechamento cobre duas diárias de captação, a mentoria de 4 horas e a edição de até 20 vídeos, somando as duas diárias.',
-          'A edição mensal cobre até 10 vídeos por mês. Acima disso, o lote extra é orçado antes.',
-          'A edição inclui corte, ritmo, legenda, cor e transição. Efeitos e animação entram na edição avançada.',
+          'O fechamento cobre duas diárias de captação, a mentoria de 2 horas e a edição de até 20 vídeos, somando as duas diárias.',
+          'A edição mensal cobre até 10 vídeos por mês. Acima disso, o lote extra é orçado antes de ser produzido.',
+          'A edição inclui corte, ritmo, legenda, cor e transição.',
         ],
       },
       {
@@ -159,18 +135,18 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         ],
       },
       {
-        titulo: 'Pagamento e encerramento',
+        titulo: 'Contrato e pagamento',
         itens: [
-          'O fechamento é pago antes da primeira diária, via Pix ou transferência, com nota fiscal.',
-          'A edição mensal é cobrada até o 5º dia útil de cada mês.',
-          'Com o fechamento quitado, o contrato anterior é encerrado sem multa.',
+          'O contrato de edição tem prazo de 12 meses, com início em 1 de dezembro de 2026.',
+          'Saída antes dos 12 meses tem multa de 50% das mensalidades restantes.',
+          'O fechamento é pago antes da primeira diária. A edição mensal é cobrada até o 5º dia útil de cada mês.',
         ],
       },
     ],
     pagamento: {
       blocos: [
         { titulo: 'Fechamento', descricao: 'R$ 997, pago antes da primeira diária, via Pix ou transferência, com nota fiscal.' },
-        { titulo: 'Edição mensal', descricao: 'R$ 397 na básica ou R$ 697 na avançada, até o 5º dia útil de cada mês.' },
+        { titulo: 'Edição mensal', descricao: 'R$ 397 por mês, até o 5º dia útil, com contrato de 12 meses.' },
         { titulo: 'Arquivos', descricao: 'Os vídeos finais ficam disponíveis por 12 meses. O material bruto, por 60 dias.' },
       ],
       meios: [
@@ -181,19 +157,19 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
     faq: [
       {
         pergunta: 'Preciso saber gravar?',
-        resposta: 'Não. A mentoria de 4 horas cobre onde apoiar o celular, luz, som e enquadramento, com uma gravação de teste entre os dois encontros.',
+        resposta: 'Não. A mentoria de 2 horas cobre onde apoiar o celular, luz, som e enquadramento, em um encontro único.',
       },
       {
         pergunta: 'Quantos vídeos eu recebo?',
-        resposta: 'Até 10 por mês na edição mensal. No fechamento, até 20, somando as duas diárias.',
+        resposta: 'Até 10 por mês na edição. No fechamento, até 20, somando as duas diárias.',
       },
       {
         pergunta: 'E se eu gravar mais de 10 vídeos no mês?',
         resposta: 'O excedente vira lote extra, orçado antes de ser produzido.',
       },
       {
-        pergunta: 'Preciso manter contrato depois de novembro?',
-        resposta: 'Não. A edição é mês a mês, sem fidelidade. No mês sem material, não há cobrança.',
+        pergunta: 'Qual é o prazo do contrato de edição?',
+        resposta: 'Doze meses, a partir de 1 de dezembro. A saída antes disso tem multa de 50% das mensalidades restantes.',
       },
       {
         pergunta: 'E a diária de outubro que eu já paguei?',
