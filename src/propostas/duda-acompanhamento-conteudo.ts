@@ -11,7 +11,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
   envio: '2026-11-03',
   intro_capa: 'Esta proposta resolve a diária de outubro, que já foi paga e não foi usada, e coloca na mesa os dois caminhos possíveis: seguir com um contrato de edição de 12 meses, ou encerrar o contrato atual com a multa prevista.',
   valor: {
-    principal: 397,
+    principal: 497,
     moeda: 'BRL',
   },
   mostrarPortfolio: true,
@@ -43,7 +43,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
     cenario: {
       problema: 'Um contrato de conteúdo presencial não sobrevive a uma mudança de cidade. Quando ele termina no meio, sobram duas coisas para resolver: uma diária já paga e não usada, e a multa da saída antecipada.',
       publico: 'Mulheres que te acompanham pelo Instagram antes de marcar consulta, presencial ou online, e que passam a te encontrar também pela saúde capilar.',
-      desafio: 'Resolver as duas sem perder o que já foi construído, e decidir com clareza se vale seguir publicando de Campinas.',
+      desafio: 'Resolver as duas sem perder o que já foi construído, e decidir com clareza se vale seguir publicando.',
       entregas: [
         'A diária de outubro entregue antes da mudança, sem cobrança nova',
         'Dois caminhos com número na mesa, nenhum deles em aberto',
@@ -68,7 +68,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         titulo: 'O que vem depois',
         periodo: 'DEZEMBRO EM DIANTE',
         itens: [
-          { titulo: 'Caminho 1: continuar', descricao: 'Contrato de edição de 12 meses a R$ 397 por mês. Você grava em Campinas, envia por link e recebe o vídeo pronto.', limite: 'até 10 vídeos por mês' },
+          { titulo: 'Caminho 1: continuar', descricao: 'Contrato de edição de 12 meses a R$ 497 por mês. Você grava, envia por link e recebe o vídeo pronto.', limite: 'até 10 vídeos por mês' },
           { titulo: 'Caminho 2: encerrar', descricao: 'Encerramento do contrato atual ao fim de outubro, com a multa de 50% das mensalidades restantes prevista nele.', limite: 'multa do contrato atual' },
           { titulo: 'O que muda em cada um', descricao: 'Assinando o contrato novo, a multa deixa de existir. Não assinando, o encerramento acontece com ela.' },
         ],
@@ -83,12 +83,11 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         itens: [
           'Até 10 vídeos editados por mês',
           'Corte, ritmo, legenda e cor',
-          'Legenda pronta de cada vídeo, com hashtag e chamada',
-          'Entrega em até 14 dias úteis por lote',
+          'Entrega em até 10 dias úteis por lote',
           'Uma rodada de alteração por vídeo',
           'A multa do contrato atual deixa de existir',
         ],
-        valor: 397,
+        valor: 497,
         periodo: '/mês',
         rodape: 'Contrato de 12 meses, a partir de dezembro',
       },
@@ -108,7 +107,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
     ],
     prazos: [
       { texto: 'A diária de outubro é realizada entre 9 e 19 de novembro, antes da sua mudança.', bold: 'entre 9 e 19 de novembro' },
-      { texto: 'Na edição mensal, a entrega é de até 14 dias úteis por lote recebido.', bold: 'até 14 dias úteis' },
+      { texto: 'Na edição mensal, a entrega é de até 10 dias úteis por lote recebido.', bold: 'até 10 dias úteis' },
       { texto: 'Cada vídeo tem uma rodada de alteração, pedida em até 7 dias corridos após a entrega e devolvida em até 2 dias úteis.', bold: 'uma rodada de alteração' },
       { texto: 'Assinando o contrato de edição de 12 meses, a multa do contrato atual deixa de existir.', bold: 'deixa de existir' },
       { texto: 'Não assinando, o encerramento acontece com a multa de 50% das mensalidades restantes prevista no contrato atual.', bold: 'com a multa' },
@@ -149,7 +148,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
     pagamento: {
       blocos: [
         { titulo: 'Diária de outubro', descricao: 'Já paga em outubro de 2026. A entrega em novembro quita esse mês, então não há nada a pagar.' },
-        { titulo: 'Contrato de edição', descricao: 'R$ 397 por mês, cobrados até o 5º dia útil de cada mês, com nota fiscal.' },
+        { titulo: 'Contrato de edição', descricao: 'R$ 497 por mês, cobrados até o 5º dia útil de cada mês, com nota fiscal.' },
         { titulo: 'Encerramento', descricao: 'R$ 2.686,50, que é 50% das 9 mensalidades restantes, de novembro de 2026 a julho de 2027. À vista, na assinatura do encerramento.' },
       ],
       meios: [
@@ -168,7 +167,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
       },
       {
         pergunta: 'O que eu pago se quiser continuar?',
-        resposta: 'R$ 397 por mês, em contrato de 12 meses, e a multa do contrato atual deixa de existir.',
+        resposta: 'R$ 497 por mês, em contrato de 12 meses, e a multa do contrato atual deixa de existir.',
       },
       {
         pergunta: 'O que eu pago se quiser encerrar?',
@@ -180,7 +179,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
       },
       {
         pergunta: 'Quantos vídeos por mês e em quanto tempo?',
-        resposta: 'Até 10 vídeos, entregues em até 14 dias úteis por lote recebido, com uma rodada de alteração por vídeo.',
+        resposta: 'Até 10 vídeos, entregues em até 10 dias úteis por lote recebido, com uma rodada de alteração por vídeo.',
       },
     ],
     confidencialidade: 'Esta proposta é confidencial e destinada exclusivamente a você. Validade de 7 dias corridos a partir da data de envio. Preços sujeitos a atualização após o vencimento.',
