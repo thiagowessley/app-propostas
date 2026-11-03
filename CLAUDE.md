@@ -120,7 +120,7 @@ thiagowessley-dossies). Opcional por proposta; as outras continuam no molde de s
   `prazos`, `contrato`, `pagamento`, `encerramento`). Referência: dassg-linha-pet-marca-e-teste.ts.
 - Vários planos (13/10/2026): a seção de investimento mostra um cartão por item de `secoes.planos`, lado a lado,
   em largura cheia (`destaque` vira o selo "Mais escolhido" e `video` vira o vídeo do YouTube embaixo do cartão).
-  Com um plano só o resultado é o de sempre. O pop-up de saída não existe no molde dossiê. Proposta de serviço sem
+  Com um plano só o resultado é o de sempre. O pop-up de saída não existe no molde dossiê, e desde 03/11/2026 foi removido de todos os moldes (o componente PopupSaida.tsx segue no repo, sem uso). Proposta de serviço sem
   catálogo ou páginas publicadas usa `base: { provas: [], produtos: [] }` e `null` nas fases sem quadro. Edição e
   cobertura completa são sempre propostas separadas, nunca cards do mesmo grid (Valens e Thais, 13/10/2026).
 - `PropostaPage.tsx` desvia para `src/components/dossie/PropostaDossie.tsx` só quando estilo = 'dossie'.
