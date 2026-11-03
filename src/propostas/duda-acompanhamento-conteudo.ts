@@ -91,6 +91,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         valor: 697,
         periodo: '/mês',
         rodape: 'Contrato de 12 meses, a partir de dezembro',
+        video: { youtubeId: 'JNHSNxgJT1s', label: 'Exemplo de edição avançada, Camila Oliveira' },
       },
       {
         nome: 'Encerrar o contrato',
