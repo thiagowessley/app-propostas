@@ -101,7 +101,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
           'A diária de outubro, já paga, realizada',
           'Contrato encerrado ao fim de outubro de 2026',
           'Multa de 50% sobre as 9 mensalidades que faltavam',
-          'Parcelamento em até 4 vezes',
+          'Pagamento à vista, na assinatura',
         ],
         valor: 2686.5,
         periodo: 'multa de saída',
@@ -128,7 +128,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         itens: [
           'O contrato tem 12 mensalidades, de agosto de 2026 a julho de 2027, no valor de R$ 597,00 cada.',
           'Agosto, setembro e outubro já foram pagos. Restam 9 mensalidades, de novembro de 2026 a julho de 2027, somando R$ 5.373,00.',
-          'A multa é de 50% sobre esse valor: R$ 2.686,50, em até 4 vezes.',
+          'A multa é de 50% sobre esse valor: R$ 2.686,50, à vista na assinatura.',
           'Com o contrato de edição assinado, essa multa não existe.',
         ],
       },
@@ -153,7 +153,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
       blocos: [
         { titulo: 'Diária de outubro', descricao: 'Já paga em outubro de 2026. A entrega em novembro quita esse mês, então não há nada a pagar.' },
         { titulo: 'Contrato de edição', descricao: 'R$ 397 por mês, cobrados até o 5º dia útil de cada mês, com nota fiscal.' },
-        { titulo: 'Encerramento', descricao: 'R$ 2.686,50, que é 50% das 9 mensalidades restantes, de novembro de 2026 a julho de 2027. Pode ser parcelado em até 4 vezes.' },
+        { titulo: 'Encerramento', descricao: 'R$ 2.686,50, que é 50% das 9 mensalidades restantes, de novembro de 2026 a julho de 2027. À vista, na assinatura do encerramento.' },
       ],
       meios: [
         { nome: 'Pix', detalhe: 'Transferência instantânea' },
@@ -175,7 +175,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
       },
       {
         pergunta: 'O que eu pago se quiser encerrar?',
-        resposta: 'R$ 2.686,50, que é 50% das 9 mensalidades que faltavam, de novembro de 2026 a julho de 2027. Pode ser parcelado em até 4 vezes.',
+        resposta: 'R$ 2.686,50, que é 50% das 9 mensalidades que faltavam, de novembro de 2026 a julho de 2027. À vista, na assinatura do encerramento.',
       },
       {
         pergunta: 'Preciso pagar novembro se eu encerrar?',
