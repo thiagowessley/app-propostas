@@ -3,6 +3,49 @@ import { SOBRE_PADRAO, encerramentoPadrao } from '../lib/copy-padrao'
 
 export const dudaAcompanhamentoConteudo: PropostaData = {
   slug: 'duda-acompanhamento-conteudo',
+  estilo: 'dossie',
+  dossie: {
+    retrato: { src: '/img/portfolio/camila-oliveira.jpg', alt: 'Nutricionista falando direto pra câmera em Reels educativo', largura: 720, altura: 1280, foco: '50% 24%', mira: ['50%', '31%'] },
+    galeria: [
+      { src: '/img/portfolio/natalia-merheb.jpg', alt: 'Especialista em vídeo educativo sobre saúde', largura: 405, altura: 720, foco: '50% 26%' },
+      { src: '/img/portfolio/patricia-gurgel.jpg', alt: 'Especialista em vídeo de depoimento', largura: 405, altura: 720, foco: '50% 30%' },
+    ],
+    titulo: { fino: 'Conteúdo toda semana,', grosso: 'gravado no seu espaço e editado aqui, com pauta e legenda prontas.' },
+    lede: 'Um acompanhamento mensal para o perfil publicar toda semana sem depender de estúdio, de deslocamento ou de aprender a editar: você grava no seu espaço, envia o material por link e recebe o vídeo pronto, com legenda, calendário e direção.',
+    documento: 'Proposta comercial',
+    duracao: 'a cada mês',
+    base: { provas: [], produtos: [] },
+    linha: {
+      titulo: 'Do material bruto ao mês coberto',
+      nota: 'O ciclo se repete todo mês, contado a partir da chegada do material bruto. A entrega tem prazo escrito, para o calendário não depender de sobra de agenda.',
+      inicio: 'Calendário do mês',
+      fim: 'Mês coberto',
+    },
+    marcos: [
+      { dia: 'Semana 1', nome: 'Calendário e pauta' },
+      { dia: 'Semana 2', nome: 'Gravação e envio' },
+      { dia: 'Semana 3', nome: 'Vídeos editados' },
+      { dia: 'Semana 4', nome: 'Legenda e carrossel' },
+    ],
+    teste: [
+      { etapa: 'Pauta', nome: 'Gancho e estrutura, comigo' },
+      { etapa: 'Gravação', nome: 'No seu espaço, com o guia' },
+      { etapa: 'Envio', nome: 'Por link, direto do celular' },
+      { etapa: 'Edição', nome: 'Corte, ritmo e legenda' },
+      { etapa: 'Publicação', nome: 'No ritmo que você escolher' },
+    ],
+    videos: [
+      { youtubeId: 'V5lMb2SksPs', titulo: 'Exemplo de edição: Maria Eduarda', poster: '/img/portfolio/camila-oliveira.jpg' },
+    ],
+    paineis: [
+      { tipo: 'teste', titulo: 'Como o mês roda', legenda: 'Do calendário ao vídeo pronto para postar.' },
+      null,
+      { tipo: 'videos', titulo: 'Padrão de edição', legenda: 'Exemplo de vídeo editado no formato Reels.' },
+    ],
+    secoesExtras: ['sobre', 'referencias'],
+    fecho: 'O perfil publica toda semana, com você gravando vinte minutos no seu espaço.',
+    depois: 'Quando o volume de vídeo crescer, o próximo degrau é a gravação assistida ao vivo, no plano Direção.',
+  },
   cliente: 'Maria Eduarda Longatto',
   segmento: 'Nutricionista, saúde da mulher e saúde capilar',
   servico: 'Acompanhamento de Conteúdo',
