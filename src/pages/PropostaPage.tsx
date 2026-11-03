@@ -14,7 +14,6 @@ import { Pagamento } from '../components/sections/Pagamento'
 import { ServicoAdicional } from '../components/sections/ServicoAdicional'
 import { Referencias } from '../components/sections/Referencias'
 import { Encerramento } from '../components/sections/Encerramento'
-import { PopupSaida } from '../components/ui/PopupSaida'
 import { PropostaDossie } from '../components/dossie/PropostaDossie'
 import { registrarVisita } from '../lib/analytics'
 import { calcularTempoLeitura } from '../lib/tempo'
@@ -98,7 +97,6 @@ export function PropostaPage() {
         {s.referencias && <Referencias referencias={s.referencias} />}
         <Encerramento proposta={proposta} />
       </PropostaLayout>
-      <PopupSaida whatsapp={proposta.contato.whatsapp} />
     </>
   )
 }
