@@ -69,7 +69,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         periodo: 'DEZEMBRO EM DIANTE',
         itens: [
           { titulo: 'Caminho 1: continuar', descricao: 'Contrato de edição de 12 meses a R$ 397 por mês. Você grava em Campinas, envia por link e recebe o vídeo pronto.', limite: 'até 10 vídeos por mês' },
-          { titulo: 'Caminho 2: encerrar', descricao: 'Encerramento do contrato atual em novembro, com a multa de 50% das mensalidades restantes prevista nele.', limite: 'multa do contrato atual' },
+          { titulo: 'Caminho 2: encerrar', descricao: 'Encerramento do contrato atual ao fim de outubro, com a multa de 50% das mensalidades restantes prevista nele.', limite: 'multa do contrato atual' },
           { titulo: 'O que muda em cada um', descricao: 'Assinando o contrato novo, a multa deixa de existir. Não assinando, o encerramento acontece com ela.' },
         ],
         resumo: 'Você escolhe entre pagar a multa ou continuar com a edição',
@@ -95,17 +95,17 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         rodape: 'Contrato de 12 meses, a partir de dezembro',
       },
       {
-        nome: 'Encerrar em novembro',
-        resumo: 'Saída pelo contrato atual',
+        nome: 'Encerrar o contrato',
+        resumo: 'Saída antes do fim do contrato',
         itens: [
           'A diária de outubro, já paga, realizada',
-          'Encerramento do contrato atual em 30 de novembro',
-          'Multa de 50% das mensalidades restantes',
+          'Contrato encerrado ao fim de outubro de 2026',
+          'Multa de 50% sobre as 9 mensalidades que faltavam',
           'Parcelamento em até 4 vezes',
         ],
-        valor: 2388,
+        valor: 2686.5,
         periodo: 'multa de saída',
-        rodape: 'Valor referente à saída em novembro de 2026',
+        rodape: 'Nove mensalidades de novembro de 2026 a julho de 2027',
       },
     ],
     prazos: [
@@ -119,9 +119,17 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
       {
         titulo: 'A diária de outubro',
         itens: [
-          'A diária de outubro de 2026 já foi paga e não foi realizada. Ela acontece em novembro, sem cobrança adicional.',
-          'A entrega dessa diária em novembro e a mensalidade de novembro de 2026 se anulam: você não paga novembro, e eu entrego a diária que já estava paga. Nenhuma das partes fica devendo nada por esse mês.',
-          'Não sendo realizada até 19 de novembro de 2026, o valor de R$ 597,00 é convertido em crédito de edição ou devolvido, à escolha da CONTRATANTE, e a mensalidade de novembro volta a ser devida.',
+          'A diária de outubro de 2026 já foi paga e não foi realizada. Ela acontece em novembro, sem cobrança adicional, e é o que quita esse mês.',
+          'Não sendo realizada até 19 de novembro de 2026, o valor de R$ 597,00 é convertido em crédito de edição ou devolvido, à escolha da CONTRATANTE.',
+        ],
+      },
+      {
+        titulo: 'Como a multa é calculada',
+        itens: [
+          'O contrato tem 12 mensalidades, de agosto de 2026 a julho de 2027, no valor de R$ 597,00 cada.',
+          'Agosto, setembro e outubro já foram pagos. Restam 9 mensalidades, de novembro de 2026 a julho de 2027, somando R$ 5.373,00.',
+          'A multa é de 50% sobre esse valor: R$ 2.686,50, em até 4 vezes.',
+          'Com o contrato de edição assinado, essa multa não existe.',
         ],
       },
       {
@@ -143,9 +151,9 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
     ],
     pagamento: {
       blocos: [
-        { titulo: 'Diária de outubro', descricao: 'Já paga em outubro de 2026. A entrega em novembro substitui a cobrança da mensalidade de novembro, então não há nada a pagar.' },
+        { titulo: 'Diária de outubro', descricao: 'Já paga em outubro de 2026. A entrega em novembro quita esse mês, então não há nada a pagar.' },
         { titulo: 'Contrato de edição', descricao: 'R$ 397 por mês, cobrados até o 5º dia útil de cada mês, com nota fiscal.' },
-        { titulo: 'Encerramento', descricao: 'Multa de 50% das mensalidades restantes do contrato atual, podendo ser parcelada em até 4 vezes.' },
+        { titulo: 'Encerramento', descricao: 'R$ 2.686,50, que é 50% das 9 mensalidades restantes, de novembro de 2026 a julho de 2027. Pode ser parcelado em até 4 vezes.' },
       ],
       meios: [
         { nome: 'Pix', detalhe: 'Transferência instantânea' },
@@ -167,7 +175,11 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
       },
       {
         pergunta: 'O que eu pago se quiser encerrar?',
-        resposta: 'A multa de 50% das mensalidades restantes do contrato atual, que pode ser parcelada em até 4 vezes.',
+        resposta: 'R$ 2.686,50, que é 50% das 9 mensalidades que faltavam, de novembro de 2026 a julho de 2027. Pode ser parcelado em até 4 vezes.',
+      },
+      {
+        pergunta: 'Preciso pagar novembro se eu encerrar?',
+        resposta: 'Não. O contrato se encerra ao fim de outubro, e novembro entra na conta da multa como mês restante. A diária pendente é a de outubro, já paga.',
       },
       {
         pergunta: 'Quantos vídeos por mês e em quanto tempo?',
