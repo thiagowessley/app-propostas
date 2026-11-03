@@ -59,7 +59,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         itens: [
           { titulo: 'O que já está pago', descricao: 'A diária de outubro de 2026 foi paga e não foi realizada. Ela acontece antes da sua mudança, sem custo adicional.', resultado: 'Outubro fecha sem pendência' },
           { titulo: 'A captação do dia', descricao: 'Um dia de gravação no seu espaço, com o material que você já separou, no mesmo formato das diárias anteriores.' },
-          { titulo: 'Se não der tempo', descricao: 'Não sendo realizada até 19 de novembro, o valor é convertido em crédito de edição ou devolvido, à sua escolha.' },
+          { titulo: 'Se não der tempo', descricao: 'Não sendo realizada até 19 de novembro, o valor fica como crédito de edição para usar quando quiser.' },
         ],
         resumo: 'A pendência de outubro fica resolvida antes de você ir',
       },
@@ -84,10 +84,8 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
           'Até 10 vídeos editados por mês',
           'Corte, ritmo, legenda e cor',
           'Legenda pronta de cada vídeo, com hashtag e chamada',
-          'Trilha licenciada, sem risco de direito autoral',
           'Entrega em até 14 dias úteis por lote',
           'Uma rodada de alteração por vídeo',
-          'Mentoria de gravação: 2 horas, em um encontro',
           'A multa do contrato atual deixa de existir',
         ],
         valor: 397,
@@ -120,7 +118,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         titulo: 'A diária de outubro',
         itens: [
           'A diária de outubro de 2026 já foi paga e não foi realizada. Ela acontece em novembro, sem cobrança adicional, e é o que quita esse mês.',
-          'Não sendo realizada até 19 de novembro de 2026, o valor de R$ 597,00 é convertido em crédito de edição ou devolvido, à escolha da CONTRATANTE.',
+          'Não sendo realizada até 19 de novembro de 2026, o valor de R$ 597,00 fica como crédito de edição em favor da CONTRATANTE.',
         ],
       },
       {
@@ -145,7 +143,6 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
         itens: [
           'Gancho, estrutura e chamada são meus. A informação técnica, a checagem e a responsabilidade pelo que é dito são suas, como especialista.',
           'Capa de vídeo, gestão de redes e tráfego pago não fazem parte deste contrato e podem ser orçados à parte.',
-          'A trilha usada nas edições é licenciada, sem risco de direito autoral.',
         ],
       },
     ],
@@ -167,7 +164,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
       },
       {
         pergunta: 'E se eu não conseguir gravar antes de ir?',
-        resposta: 'O valor de R$ 597,00 é convertido em crédito de edição ou devolvido, à sua escolha.',
+        resposta: 'O valor de R$ 597,00 fica como crédito de edição, para usar quando quiser.',
       },
       {
         pergunta: 'O que eu pago se quiser continuar?',
