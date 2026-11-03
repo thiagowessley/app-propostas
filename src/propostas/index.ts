@@ -15,6 +15,7 @@ import { thaisEdicaoVideo } from './thais-edicao-video'
 import { tassianaBniAftermovie } from './tassiana-bni-aftermovie'
 import { rafaelBniAftermovie } from './rafael-bni-aftermovie'
 import { dassgLinhaPetMarcaETeste } from './dassg-linha-pet-marca-e-teste'
+import { dudaAcompanhamentoConteudo } from './duda-acompanhamento-conteudo'
 
 export const propostas: Record<string, PropostaData> = {
   instituto,
@@ -33,6 +34,7 @@ export const propostas: Record<string, PropostaData> = {
   tassianaBniAftermovie,
   rafaelBniAftermovie,
   dassgLinhaPetMarcaETeste,
+  dudaAcompanhamentoConteudo,
 }
 
 export function getPropostaBySlug(slug: string): PropostaData | undefined {
