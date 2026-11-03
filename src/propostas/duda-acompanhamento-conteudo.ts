@@ -115,7 +115,7 @@ export const dudaAcompanhamentoConteudo: PropostaData = {
       { texto: 'Os vídeos do fechamento são entregues em até 14 dias úteis depois de cada diária.', bold: 'até 14 dias úteis' },
       { texto: 'Na edição mensal, o prazo é de até 14 dias úteis por lote recebido.', bold: 'por lote recebido' },
       { texto: 'Cada vídeo tem uma rodada de alteração, pedida em até 7 dias corridos após a entrega e devolvida em até 2 dias úteis.', bold: 'uma rodada de alteração' },
-      { texto: 'A multa do contrato atual deixa de existir com a assinatura do contrato de edição de 12 meses.', bold: 'com a assinatura do contrato de edição' },
+      { texto: 'A multa do contrato atual deixa de existir com a assinatura do contrato de edição de 12 meses. Sem o contrato novo, o encerramento segue com a multa de 50% das mensalidades restantes, prevista no contrato atual.', bold: 'com a assinatura do contrato de edição' },
     ],
     contrato: [
       {
