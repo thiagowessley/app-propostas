@@ -110,8 +110,8 @@ export const dassgLinhaPetMarcaETeste: PropostaData = {
   cliente: 'Dassg Têmpera',
   segmento: 'Indústria de tratamento térmico, Araquari/SC',
   servico: 'Linha Pet Dassg: Marca e Validação de Mercado',
-  validade: '2026-10-06',
-  envio: '2026-09-29',
+  validade: '2026-11-11',
+  envio: '2026-11-04',
   intro_capa: 'Esta proposta apresenta o escopo, o prazo e o investimento do projeto que leva as duas linhas pet da Dassg Têmpera, Patas de Aço em inox e a linha em plástico, até o primeiro contato com tutores e parceiros comerciais: marca, catálogo, site, Instagram, foto e vídeo das amostras e um teste de mercado medido produto por produto.',
   valor: {
     principal: 10000,
