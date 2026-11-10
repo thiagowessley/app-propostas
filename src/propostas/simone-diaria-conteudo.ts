@@ -140,7 +140,7 @@ export const simoneDiariaConteudo: PropostaData = {
         ],
         valor: 797,
         periodo: '/mês',
-        rodape: 'Plano anual. Sem permanência, R$ 997 por mês',
+        rodape: 'Plano de 12 meses. No mês a mês, R$ 997',
         video: { youtubeId: 'V5lMb2SksPs', label: 'Exemplo de edição básica: Maria Eduarda' },
       },
       {
@@ -155,7 +155,7 @@ export const simoneDiariaConteudo: PropostaData = {
         ],
         valor: 1297,
         periodo: '/mês',
-        rodape: 'Plano anual. Sem permanência, R$ 1.497 por mês',
+        rodape: 'Plano de 12 meses. No mês a mês, R$ 1.497',
         video: { youtubeId: 'JNHSNxgJT1s', label: 'Exemplo de edição avançada: Camila Oliveira' },
       },
     ],
