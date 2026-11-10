@@ -12,22 +12,22 @@ export const simoneDiariaConteudo: PropostaData = {
       { src: '/img/portfolio/camila-oliveira.jpg', alt: 'Profissional em vídeo de depoimento', largura: 405, altura: 720, foco: '50% 26%' },
       { src: '/img/portfolio/patricia-gurgel.jpg', alt: 'Profissional em vídeo curto de conteúdo', largura: 405, altura: 720, foco: '50% 30%' },
     ],
-    titulo: { fino: 'Dra. Simone Correia:', grosso: 'conteúdo em vídeo todo mês, com o Instagram e o YouTube sempre abastecidos.' },
+    titulo: { fino: 'Dra. Simone Correia:', grosso: 'conteúdo em vídeo todo mês, gravado num bloco só e entregue pronto pra postar.' },
     lede: 'Uma diária de captação de até 3 horas por mês e a edição dos vídeos, no nível que você escolher. Você grava um bloco de uma vez, e eu devolvo tudo pronto pra postar.',
     documento: 'Proposta comercial',
     duracao: 'a cada mês',
     base: { provas: [], produtos: [] },
     linha: {
-      titulo: 'Um mês, da pauta ao feed abastecido',
+      titulo: 'Um mês, da pauta ao vídeo no ar',
       nota: 'O ciclo se repete todo mês. A diária é agendada com pelo menos 5 dias úteis de antecedência, e os primeiros vídeos chegam na semana seguinte à captação.',
       inicio: 'Pauta do mês',
-      fim: 'Feed abastecido',
+      fim: 'Conteúdo no ar',
     },
     marcos: [
       { dia: 'Semana 1', nome: 'Pauta e agenda' },
       { dia: 'Semana 2', nome: 'Diária de captação' },
       { dia: 'Semana 3', nome: 'Primeiros vídeos' },
-      { dia: 'Semana 4', nome: 'Mês abastecido' },
+      { dia: 'Semana 4', nome: 'Conteúdo no ar' },
     ],
     teste: [
       { etapa: 'Pauta', nome: 'Temas e roteiro, seus' },
@@ -37,7 +37,7 @@ export const simoneDiariaConteudo: PropostaData = {
       { etapa: 'Publicação', nome: 'No ritmo que você escolher' },
     ],
     videos: [
-      { youtubeId: 'JNHSNxgJT1s', titulo: 'Exemplo de edição: Camila Oliveira', poster: '/img/portfolio/camila-oliveira.jpg' },
+      { youtubeId: 'iav7SyQ3SJI', titulo: 'Exemplo de edição: palestra em formato Reels', poster: '/img/portfolio/video-palestra-bni-juliano-madeira.jpg' },
     ],
     paineis: [
       { tipo: 'teste', titulo: 'Como cada mês roda', legenda: 'Da pauta ao vídeo pronto pra postar.' },
@@ -73,7 +73,7 @@ export const simoneDiariaConteudo: PropostaData = {
       publico: 'Quem encontra você pelo Instagram antes de marcar um atendimento, e quem acompanha pelo YouTube pra decidir com calma antes de falar com você.',
       desafio: 'Produzir vídeo com constância sem virar produtora do próprio conteúdo e sem tirar tempo do que gera receita.',
       entregas: [
-        'Um bloco de gravação por mês, com vídeos suficientes pra alimentar o feed até a diária seguinte',
+        'Um bloco de gravação por mês, que rende vídeo até a diária seguinte',
         'Vídeos num padrão só, em vez de celular na mão entre um atendimento e outro',
         'O mesmo material servindo Instagram e YouTube, sem gravar duas vezes',
         'Primeiros vídeos no ar na semana seguinte à diária',
@@ -236,7 +236,7 @@ export const simoneDiariaConteudo: PropostaData = {
       'Semana 1: pauta do mês fechada e diária agendada',
       'Semana 2: diária de captação e início da edição',
       'Semana 3: primeiros vídeos entregues e publicados',
-      'Semana 4: restante do conteúdo entregue, mês abastecido',
+      'Semana 4: restante do conteúdo entregue, conteúdo do mês no ar',
     ],
     confidencialidade: 'Esta proposta é confidencial e destinada exclusivamente à Dra. Simone Correia. Validade de 7 dias corridos a partir da data de envio. Preços sujeitos a atualização após o vencimento.',
     encerramento: encerramentoPadrao('o escopo, o processo e o investimento'),
