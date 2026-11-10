@@ -141,6 +141,7 @@ export const simoneDiariaConteudo: PropostaData = {
         valor: 997,
         periodo: '/mês',
         rodape: 'Renovação mês a mês, sem prazo contratado',
+        video: { youtubeId: 'V5lMb2SksPs', label: 'Exemplo de edição básica: Maria Eduarda' },
       },
       {
         nome: 'Diária com Edição Avançada',
@@ -156,6 +157,7 @@ export const simoneDiariaConteudo: PropostaData = {
         valor: 1299,
         periodo: '/mês',
         rodape: 'Renovação mês a mês, sem prazo contratado',
+        video: { youtubeId: 'JNHSNxgJT1s', label: 'Exemplo de edição avançada: Camila Oliveira' },
       },
     ],
     prazos: [
