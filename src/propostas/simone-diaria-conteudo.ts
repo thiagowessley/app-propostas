@@ -37,7 +37,7 @@ export const simoneDiariaConteudo: PropostaData = {
       { etapa: 'Publicação', nome: 'No ritmo que você escolher' },
     ],
     videos: [
-      { youtubeId: 'iav7SyQ3SJI', titulo: 'Exemplo de edição: palestra em formato Reels', poster: '/img/portfolio/video-palestra-bni-juliano-madeira.jpg' },
+      { youtubeId: 'qMZPZTCJ8S8', titulo: 'Exemplo de edição: conteúdo para redes', poster: '/img/portfolio/patricia-gurgel.jpg' },
     ],
     paineis: [
       { tipo: 'teste', titulo: 'Como cada mês roda', legenda: 'Da pauta ao vídeo pronto pra postar.' },
@@ -57,7 +57,7 @@ export const simoneDiariaConteudo: PropostaData = {
   envio: '2026-11-10',
   intro_capa: 'Esta proposta apresenta a diária de conteúdo em vídeo pra Dra. Simone Correia: uma visita de captação de até 3 horas por mês, com os vídeos editados e entregues prontos pra postar. São duas opções de edição, básica e avançada, com escopo, processo, prazos, condições e investimento descritos abaixo.',
   valor: {
-    principal: 997,
+    principal: 797,
     moeda: 'BRL',
   },
   ctaWhatsapp: 'Agendar a diária de conteúdo',
@@ -129,23 +129,8 @@ export const simoneDiariaConteudo: PropostaData = {
     ],
     planos: [
       {
-        nome: 'Edição Básica, mês a mês',
+        nome: 'Edição Básica',
         resumo: 'Captação e edição essencial',
-        itens: [
-          '1 diária de captação por mês, visita única de até 3 horas',
-          'Quantidade de vídeos livre dentro do tempo da diária',
-          'Edição básica: corte, legenda, cor e transição',
-          'Primeiros vídeos na semana seguinte à diária',
-          'Sem permanência, renovação mês a mês',
-        ],
-        valor: 997,
-        periodo: '/mês',
-        rodape: 'Sem prazo contratado, renovação mês a mês',
-        video: { youtubeId: 'V5lMb2SksPs', label: 'Exemplo de edição básica: Maria Eduarda' },
-      },
-      {
-        nome: 'Edição Básica, plano anual',
-        resumo: 'Mesmo escopo, compromisso de 12 meses',
         itens: [
           '1 diária de captação por mês, visita única de até 3 horas',
           'Quantidade de vídeos livre dentro do tempo da diária',
@@ -155,26 +140,12 @@ export const simoneDiariaConteudo: PropostaData = {
         ],
         valor: 797,
         periodo: '/mês',
-        rodape: 'Valor fixo durante os 12 meses de contrato',
+        rodape: 'Plano anual. Sem permanência, R$ 997 por mês',
+        video: { youtubeId: 'V5lMb2SksPs', label: 'Exemplo de edição básica: Maria Eduarda' },
       },
       {
-        nome: 'Edição Avançada, mês a mês',
+        nome: 'Edição Avançada',
         resumo: 'Captação e edição com acabamento',
-        itens: [
-          '1 diária de captação por mês, visita única de até 3 horas',
-          'Quantidade de vídeos livre dentro do tempo da diária',
-          'Edição avançada: tudo da básica mais efeito sonoro, animação e b-roll',
-          'Banco de imagens e vídeos de apoio incluso, quando você não tiver material próprio',
-          'Sem permanência, renovação mês a mês',
-        ],
-        valor: 1497,
-        periodo: '/mês',
-        rodape: 'Sem prazo contratado, renovação mês a mês',
-        video: { youtubeId: 'JNHSNxgJT1s', label: 'Exemplo de edição avançada: Camila Oliveira' },
-      },
-      {
-        nome: 'Edição Avançada, plano anual',
-        resumo: 'Mesmo escopo, compromisso de 12 meses',
         itens: [
           '1 diária de captação por mês, visita única de até 3 horas',
           'Quantidade de vídeos livre dentro do tempo da diária',
@@ -184,7 +155,8 @@ export const simoneDiariaConteudo: PropostaData = {
         ],
         valor: 1297,
         periodo: '/mês',
-        rodape: 'Valor fixo durante os 12 meses de contrato',
+        rodape: 'Plano anual. Sem permanência, R$ 1.497 por mês',
+        video: { youtubeId: 'JNHSNxgJT1s', label: 'Exemplo de edição avançada: Camila Oliveira' },
       },
     ],
     prazos: [
