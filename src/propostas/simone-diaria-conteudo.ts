@@ -38,6 +38,8 @@ export const simoneDiariaConteudo: PropostaData = {
     ],
     videos: [
       { youtubeId: 'qMZPZTCJ8S8', titulo: 'Exemplo de edição: conteúdo para redes', poster: '/img/portfolio/patricia-gurgel.jpg' },
+      { youtubeId: 'w-TK32qXD4M', titulo: 'Exemplo de edição: podcast em cortes', poster: '/img/portfolio/video-podcast-fabiana-golembiewski.jpg' },
+      { youtubeId: 'WoZp2Lk3ETQ', titulo: 'Exemplo de edição: fala direta', poster: '/img/portfolio/natalia-merheb.jpg' },
     ],
     paineis: [
       { tipo: 'teste', titulo: 'Como cada mês roda', legenda: 'Da pauta ao vídeo pronto pra postar.' },
