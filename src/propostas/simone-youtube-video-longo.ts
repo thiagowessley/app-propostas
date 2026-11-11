@@ -13,8 +13,8 @@ export const simoneYoutubeVideoLongo: PropostaData = {
   dossie: {
     // Sem foto na abertura: ele ainda não tem vídeo longo no portfólio, e imagem de outro
     // formato daria a entender que existe referência do serviço (pedido dele em 12/11/2026).
-    titulo: { fino: 'Dra. Simone Correia:', grosso: 'vídeo longo no canal toda semana, gravado numa data só por mês.' },
-    lede: 'A gravação é cobrada por diária, com até 5 vídeos longos por visita, e a edição é cobrada por vídeo entregue, avulsa ou em pacote fechado de 10. Você monta o volume do mês a partir disso, e cada vídeo sai pronto para subir no canal.',
+    titulo: { fino: 'Dra. Simone Correia:', grosso: 'vídeo longo para o YouTube todo mês, com o canal trabalhando enquanto você atende.' },
+    lede: 'Vídeos de até 10 minutos para o YouTube, na quantidade que você definir por mês. A gravação se resolve numa diária, e cada vídeo chega editado, pronto para subir no canal.',
     documento: 'Proposta comercial',
     duracao: 'a cada mês',
     base: { provas: [], produtos: [] },
@@ -44,8 +44,8 @@ export const simoneYoutubeVideoLongo: PropostaData = {
       null,
     ],
     secoesExtras: ['sobre'],
-    fecho: 'Canal com vídeo novo toda semana, gravado numa data só.',
-    depois: 'Depois do primeiro mês, a diária de conteúdo de Reels usa a mesma visita de gravação para os cortes do Instagram.',
+    fecho: 'Canal ativo toda semana, com o vídeo atendendo por você.',
+    depois: 'Depois do primeiro mês, os vídeos longos também rendem cortes para o Instagram, orçados na diária de conteúdo.',
   },
   cliente: 'Dra. Simone Correia',
   segmento: 'Clínica de tricologia, Joinville e Florianópolis/SC',
@@ -159,9 +159,9 @@ export const simoneYoutubeVideoLongo: PropostaData = {
           'Uma data de gravação por mês, sem voltar ao estúdio',
           'Entrega em MP4, por link, com data sugerida de publicação',
         ],
-        valor: 3000,
+        valor: 2997,
         periodo: '/mês',
-        rodape: 'No plano anual, R$ 2.800 por ciclo, com permanência de 12 meses.',
+        rodape: 'No plano anual, R$ 2.797 por ciclo, com permanência de 12 meses.',
       },
     ],
     prazos: [
@@ -201,7 +201,7 @@ export const simoneYoutubeVideoLongo: PropostaData = {
       blocos: [
         { titulo: 'Edição, por vídeo', descricao: 'R$ 297 por vídeo entregue. Em pacote fechado de 10, sai por R$ 2.500.' },
         { titulo: 'Captação, por diária', descricao: 'R$ 997 por diária de 3 horas, com até 5 vídeos longos. Duas emendadas cobrem 10 vídeos e somam R$ 1.994.' },
-        { titulo: 'Pacote completo', descricao: 'A captação de 10 vídeos e a edição dos 10, numa data só por mês, por R$ 3.000. No plano anual, R$ 2.800.' },
+        { titulo: 'Pacote completo', descricao: 'A captação de 10 vídeos e a edição dos 10, numa data só por mês, por R$ 2.997. No plano anual, R$ 2.797.' },
         { titulo: 'Deslocamento', descricao: 'Joinville não tem custo. Florianópolis, Curitiba e São Paulo são orçados à parte.' },
       ],
       meios: [
@@ -220,7 +220,7 @@ export const simoneYoutubeVideoLongo: PropostaData = {
       },
       {
         pergunta: 'Quanto fica por mês?',
-        resposta: 'O pacote completo, com 10 vídeos gravados e editados, fica R$ 3.000 no mês a mês, ou R$ 2.800 no plano anual. Quatro vídeos com uma diária ficam R$ 2.185.',
+        resposta: 'O pacote completo, com 10 vídeos gravados e editados, fica R$ 2.997 no mês a mês, ou R$ 2.797 no plano anual. Quatro vídeos com uma diária ficam R$ 2.185.',
       },
       {
         pergunta: 'Os cortes para Reels estão inclusos?',
