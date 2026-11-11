@@ -143,7 +143,7 @@ export interface DossiePresenca {
 }
 
 export interface ExtrasDossie {
-  retrato: DossieImagem & { foco?: string; mira?: [string, string] }   // imagem da abertura no visor de câmera (foco = object-position, mira = x e y do quadro de foco)
+  retrato?: DossieImagem & { foco?: string; mira?: [string, string] }   // imagem da abertura no visor de câmera (foco = object-position, mira = x e y do quadro de foco). Opcional desde 12/11/2026: proposta sem acervo visual que sirva à abertura usa só o texto
   galeria?: (DossieImagem & { foco?: string })[]   // outras imagens da abertura, trocadas a cada 3 segundos depois do retrato
   titulo: { fino: string; grosso: string }
   lede: string                          // linha de abertura abaixo do título

@@ -296,6 +296,8 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
   const instagramUrl = proposta.contato.instagram ? `https://instagram.com/${proposta.contato.instagram.replace('@', '')}` : null
   const ano = new Date().getFullYear()
   const paineis = useMemo(() => s.fases.map((f, i) => ({ key: `f${f.numero}`, p: d.paineis[i] ?? null })), [s.fases, d.paineis])
+  // Abertura sem imagem é permitida: a proposta só usa foto quando existe acervo que sirva ao serviço.
+  const capaImgs = [...(d.retrato ? [d.retrato] : []), ...(d.galeria ?? [])]
 
   return (
     <div className="dz dz-js" ref={raiz}>
@@ -307,29 +309,33 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
         {/* Abertura: visor de câmera */}
         <section className="dz-hero" id="topo" aria-labelledby="dz-titulo">
           <div className="dz-hero-body">
-            <figure className="dz-hero-media">
-              <Abertura imagens={[d.retrato, ...(d.galeria ?? [])]} />
-              <div className="dz-hud" aria-hidden="true" style={d.retrato.mira ? { ['--fx' as string]: d.retrato.mira[0], ['--fy' as string]: d.retrato.mira[1] } : undefined}>
-                <span className="dz-thirds" />
-                <i className="dz-tl" /><i className="dz-tr" /><i className="dz-bl" /><i className="dz-br" />
-                <span className="dz-focus" />
-                <span className="dz-rec">REC</span>
-                <span className="dz-fmt">24p</span>
-                <Timecode />
-              </div>
-            </figure>
+            {capaImgs.length > 0 && (
+              <figure className="dz-hero-media">
+                <Abertura imagens={capaImgs} />
+                <div className="dz-hud" aria-hidden="true" style={d.retrato?.mira ? { ['--fx' as string]: d.retrato.mira[0], ['--fy' as string]: d.retrato.mira[1] } : undefined}>
+                  <span className="dz-thirds" />
+                  <i className="dz-tl" /><i className="dz-tr" /><i className="dz-bl" /><i className="dz-br" />
+                  <span className="dz-focus" />
+                  <span className="dz-rec">REC</span>
+                  <span className="dz-fmt">24p</span>
+                  <Timecode />
+                </div>
+              </figure>
+            )}
             <div className="dz-wrap">
-              <div className="dz-hero-copy">
+              <div className={`dz-hero-copy${capaImgs.length ? '' : ' dz-hero-copy--full'}`}>
                 <h1 id="dz-titulo">
                   <span className="dz-thin"><PalavrasQueSobem texto={d.titulo.fino} inicio={0} /></span>{' '}
                   <span className="dz-bold"><PalavrasQueSobem texto={d.titulo.grosso} inicio={d.titulo.fino.split(' ').length} /></span>
                 </h1>
                 <p className="dz-lede">{d.lede}</p>
-                <ul className="dz-capa-strip">
-                  {[d.retrato, ...(d.galeria ?? [])].slice(0, 3).map((img, i) => (
-                    <li key={i}><img src={img.src} alt={img.alt} width={img.largura} height={img.altura} loading="lazy" /></li>
-                  ))}
-                </ul>
+                {capaImgs.length > 0 && (
+                  <ul className="dz-capa-strip">
+                    {capaImgs.slice(0, 3).map((img, i) => (
+                      <li key={i}><img src={img.src} alt={img.alt} width={img.largura} height={img.altura} loading="lazy" /></li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           </div>

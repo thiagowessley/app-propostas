@@ -11,11 +11,8 @@ export const simoneYoutubeVideoLongo: PropostaData = {
   slug: 'simone-youtube-video-longo',
   estilo: 'dossie',
   dossie: {
-    retrato: { src: '/img/portfolio/natalia-merheb.jpg', alt: 'Profissional falando direto para a câmera em vídeo de conteúdo', largura: 720, altura: 1280, foco: '50% 24%', mira: ['50%', '31%'] },
-    galeria: [
-      { src: '/img/portfolio/video-podcast-fabiana-golembiewski.jpg', alt: 'Profissional em gravação de conteúdo', largura: 720, altura: 405, foco: '50% 30%' },
-      { src: '/img/portfolio/patricia-gurgel.jpg', alt: 'Profissional em vídeo de conteúdo', largura: 405, altura: 720, foco: '50% 30%' },
-    ],
+    // Sem foto na abertura: ele ainda não tem vídeo longo no portfólio, e imagem de outro
+    // formato daria a entender que existe referência do serviço (pedido dele em 12/11/2026).
     titulo: { fino: 'Dra. Simone Correia:', grosso: 'vídeo longo no canal toda semana, gravado numa data só por mês.' },
     lede: 'A gravação é cobrada por diária, com até 5 vídeos longos por visita, e a edição é cobrada por vídeo entregue, avulsa ou em pacote fechado de 10. Você monta o volume do mês a partir disso, e cada vídeo sai pronto para subir no canal.',
     documento: 'Proposta comercial',
