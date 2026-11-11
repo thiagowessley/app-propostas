@@ -436,13 +436,6 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
                     </article>
                   ))}
                 </div>
-                {s.combo && (
-                  <div className="dz-combo">
-                    <p className="dz-combo-titulo">{s.combo.titulo}</p>
-                    <p className="dz-combo-texto">{s.combo.texto}</p>
-                    {s.combo.itens && <ul className="dz-dots">{s.combo.itens.map(it => <li key={it}>{it}</li>)}</ul>}
-                  </div>
-                )}
                 {s.notaPlanos && <p className="dz-valor-note dz-nota-planos">{s.notaPlanos}</p>}
                 {s.confidencialidade && <p className="dz-valor-note dz-conf">{s.confidencialidade}</p>}
               </>

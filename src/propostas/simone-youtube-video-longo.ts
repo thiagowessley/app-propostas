@@ -45,7 +45,7 @@ export const simoneYoutubeVideoLongo: PropostaData = {
     ],
     secoesExtras: ['sobre'],
     fecho: 'Canal ativo toda semana, com o vídeo atendendo por você.',
-    depois: 'Depois do primeiro mês, os cortes para o Instagram saem do mesmo material, pagando só a edição.',
+    depois: 'Depois do primeiro mês, os vídeos longos também rendem cortes para o Instagram, orçados à parte.',
   },
   cliente: 'Dra. Simone Correia',
   segmento: 'Clínica de tricologia, Joinville e Florianópolis/SC',
@@ -170,15 +170,6 @@ export const simoneYoutubeVideoLongo: PropostaData = {
         rodape: 'Plano de 12 meses. No mês a mês, R$ 2.997.',
       },
     ],
-    combo: {
-      titulo: 'Somando com a diária de conteúdo',
-      texto: 'Os cortes para Reels saem do mesmo material que já foi gravado no pacote, então não existe captação de novo. Você paga só a edição dos cortes.',
-      itens: [
-        'Edição básica dos cortes: R$ 397 por mês, em vez de R$ 997 da diária de conteúdo',
-        'Edição avançada dos cortes: R$ 697 por mês, com b-roll e animação',
-        'O mesmo dia de gravação serve o canal e o Instagram',
-      ],
-    },
     notaPlanos: 'No mercado, editar um vídeo de 10 minutos custa de R$ 600 a R$ 1.200, sem a gravação. Os valores acima já incluem captação e edição.',
     prazos: [
       { texto: 'A diária do mês é agendada com antecedência mínima de 5 dias úteis, conforme disponibilidade.', bold: 'antecedência mínima de 5 dias úteis' },

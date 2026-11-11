@@ -200,7 +200,6 @@ export interface PropostaData {
     referencias?: Referencia[]
     faq?: ItemFAQ[]
     primeiros_30_dias?: string[]
-    combo?: { titulo: string; texto: string; itens?: string[] }   // oferta somada a outro serviço, abaixo dos cartões
     notaPlanos?: string          // linha de contexto logo abaixo dos cartões de preço (ex: referência de mercado)
     confidencialidade?: string
 
