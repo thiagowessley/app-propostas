@@ -186,7 +186,7 @@ export const simoneDiariaConteudo: PropostaData = {
           'Cancelamento ou reagendamento com menos de 48 horas de antecedência perde a diária do mês, sem reposição.',
           'A trilha sonora usada nas edições é licenciada, sem risco de direito autoral. Uma vez aprovada, não pode ser trocada sem orçamento novo.',
           'O tema, o roteiro e o conteúdo de cada vídeo são de responsabilidade da contratante.',
-          'Diária em Joinville e em Florianópolis: sem custo de deslocamento. Nas unidades de Curitiba e São Paulo, o deslocamento é combinado à parte.',
+          'A diária acontece em Joinville, sem custo de deslocamento. Nas demais unidades (Florianópolis, Curitiba e São Paulo), o deslocamento é orçado à parte, com passagem, hospedagem e alimentação por conta da contratante.',
           'O conteúdo respeita as regras de publicidade médica: sem antes e depois, sem promessa de resultado e sem imagem de paciente.',
           regraAlteracaoVideo(1),
         ],
