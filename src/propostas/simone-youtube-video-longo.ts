@@ -13,11 +13,11 @@ export const simoneYoutubeVideoLongo: PropostaData = {
   dossie: {
     retrato: { src: '/img/portfolio/natalia-merheb.jpg', alt: 'Profissional falando direto para a câmera em vídeo de conteúdo', largura: 720, altura: 1280, foco: '50% 24%', mira: ['50%', '31%'] },
     galeria: [
-      { src: '/img/portfolio/video-podcast-fabiana-golembiewski.jpg', alt: 'Conversa gravada em formato longo', largura: 720, altura: 405, foco: '50% 30%' },
+      { src: '/img/portfolio/video-podcast-fabiana-golembiewski.jpg', alt: 'Profissional em gravação de conteúdo', largura: 720, altura: 405, foco: '50% 30%' },
       { src: '/img/portfolio/patricia-gurgel.jpg', alt: 'Profissional em vídeo de conteúdo', largura: 405, altura: 720, foco: '50% 30%' },
     ],
     titulo: { fino: 'Dra. Simone Correia:', grosso: 'vídeo longo no canal toda semana, gravado numa data só por mês.' },
-    lede: 'Você define quantos vídeos de até 10 minutos quer por mês. A gravação acontece numa diária de 3 horas, ou em duas emendadas somando 6 horas, e cada vídeo é editado e entregue pronto para subir no canal.',
+    lede: 'A gravação é cobrada por diária, com até 5 vídeos longos por visita, e a edição é cobrada por vídeo entregue, avulsa ou em pacote fechado de 10. Você monta o volume do mês a partir disso, e cada vídeo sai pronto para subir no canal.',
     documento: 'Proposta comercial',
     duracao: 'a cada mês',
     base: { provas: [], produtos: [] },
@@ -40,15 +40,10 @@ export const simoneYoutubeVideoLongo: PropostaData = {
       { etapa: 'Entrega', nome: 'Por link, em MP4' },
       { etapa: 'Publicação', nome: 'No canal, no seu ritmo' },
     ],
-    videos: [
-      { youtubeId: 'w-TK32qXD4M', titulo: 'Exemplo de edição: conversa em formato longo', poster: '/img/portfolio/video-podcast-fabiana-golembiewski.jpg' },
-      { youtubeId: 'WoZp2Lk3ETQ', titulo: 'Exemplo de edição: fala direta', poster: '/img/portfolio/natalia-merheb.jpg' },
-      { youtubeId: 'qMZPZTCJ8S8', titulo: 'Exemplo de edição: conteúdo para redes', poster: '/img/portfolio/patricia-gurgel.jpg' },
-    ],
     paineis: [
       { tipo: 'teste', titulo: 'Como cada mês roda', legenda: 'Da pauta ao vídeo publicado.' },
       null,
-      { tipo: 'videos', titulo: 'Padrão de edição', legenda: 'O acabamento é o mesmo em qualquer formato.' },
+      null,
       null,
     ],
     secoesExtras: ['sobre'],
@@ -61,7 +56,7 @@ export const simoneYoutubeVideoLongo: PropostaData = {
   responsavel: 'Dra. Simone Correia',
   validade: '2026-11-19',
   envio: '2026-11-12',
-  intro_capa: 'Esta proposta apresenta o pacote de vídeo longo para o YouTube da Clínica Recupere, da Dra. Simone Correia, especializada em queda de cabelo e couro cabeludo: vídeos de até 10 minutos, na quantidade que ela definir por mês, com a gravação concentrada numa diária e a edição inclusa. O escopo, o processo, os prazos, as condições e o investimento estão descritos abaixo.',
+  intro_capa: 'Esta proposta apresenta o vídeo longo para o YouTube da Clínica Recupere, da Dra. Simone Correia, especializada em queda de cabelo e couro cabeludo: vídeos de até 10 minutos, com a captação cobrada por diária (até 5 vídeos por visita) e a edição cobrada por vídeo, avulsa ou em pacote fechado de 10. Há também a opção de contratar tudo junto, num pacote único. O escopo, o processo, os prazos, as condições e o investimento estão descritos abaixo.',
   valor: {
     principal: 297,
     moeda: 'BRL',
@@ -79,9 +74,9 @@ export const simoneYoutubeVideoLongo: PropostaData = {
       publico: 'Pessoas pesquisando no YouTube sobre queda de cabelo, alopecia e alterações do couro cabeludo, antes de marcar uma avaliação na Recupere.',
       desafio: 'Sustentar vídeo novo no canal toda semana sem virar produtora do próprio conteúdo e sem tirar tempo do atendimento nas quatro unidades.',
       entregas: [
-        'Vídeos de até 10 minutos, na quantidade que você definir por mês',
-        'Gravação numa diária de 3 horas, ou em duas emendadas somando 6 horas',
-        'Edição completa: corte, ritmo, legenda, cor e transição',
+        'Captação em diária de 3 horas, com até 5 vídeos longos por visita',
+        'Duas diárias emendadas no mesmo dia somam 6 horas e cobrem até 10 vídeos',
+        'A edição de cada vídeo, comprada por unidade ou em pacote fechado de 10',
         'Arquivos em MP4, prontos para subir no canal',
       ],
     },
@@ -103,8 +98,8 @@ export const simoneYoutubeVideoLongo: PropostaData = {
         periodo: 'DIA COMBINADO',
         resumo: 'Ao fim da fase, o material do mês está gravado.',
         itens: [
-          { titulo: 'Captação em vídeo', descricao: 'Uma visita única e contínua, no espaço que combinarmos, com a câmera rodando por até 3 horas.', limite: 'visita única, até 3 horas' },
-          { titulo: 'Tudo numa data só', descricao: 'Duas diárias emendadas somam 6 horas de gravação e resolvem o mês inteiro num único dia.', limite: '2 diárias, 6 horas' },
+          { titulo: 'Captação em vídeo', descricao: 'Uma visita única e contínua, no espaço que combinarmos, com a câmera rodando por até 3 horas e até 5 vídeos longos gravados.', limite: 'até 5 vídeos por diária' },
+          { titulo: 'Tudo numa data só', descricao: 'Duas diárias emendadas somam 6 horas de gravação e cobrem até 10 vídeos num único dia.', limite: '2 diárias, 6 horas' },
           { titulo: 'Direção de fala', descricao: 'Conduzo cada gravação para sair natural e no ritmo certo, sem repetir tomada atrás de tomada.' },
         ],
       },
@@ -134,11 +129,11 @@ export const simoneYoutubeVideoLongo: PropostaData = {
     planos: [
       {
         nome: 'Captação',
-        resumo: 'A gravação do mês',
+        resumo: 'A gravação, por diária',
         itens: [
-          'Uma diária de 3 horas de gravação, visita única e contínua',
-          'Duas diárias emendadas no mesmo dia somam 6 horas e custam R$ 1.994',
-          'Quantos vídeos couberem no tempo da diária',
+          'Uma diária de 3 horas, visita única e contínua',
+          'Até 5 vídeos longos de 10 minutos por diária',
+          'Duas diárias emendadas no mesmo dia somam 6 horas e cobrem até 10 vídeos, por R$ 1.994',
           'Em Joinville, sem custo de deslocamento',
         ],
         valor: 997,
@@ -146,17 +141,30 @@ export const simoneYoutubeVideoLongo: PropostaData = {
         rodape: 'No plano anual, R$ 797 por diária, com permanência de 12 meses.',
       },
       {
-        nome: 'Vídeo longo',
-        resumo: 'Cada vídeo entregue',
+        nome: 'Edição',
+        resumo: 'Cobrada por vídeo',
         itens: [
           'Até 10 minutos de duração final por vídeo',
-          'Edição inclusa: corte, ritmo, legenda, cor e transição',
+          'Corte, ritmo, legenda, cor e transição',
           'Trilha licenciada, sem risco de direito autoral',
           'Entrega em MP4, por link, com data sugerida de publicação',
         ],
         valor: 297,
         periodo: '/vídeo',
-        rodape: 'Cobrado por unidade. Oito vídeos somam R$ 2.376. O valor é o mesmo nos dois planos.',
+        rodape: 'Pacote fechado de 10 vídeos: R$ 2.500. Acima disso, cada vídeo volta a R$ 297.',
+      },
+      {
+        nome: 'Pacote completo',
+        resumo: 'A gravação e a edição juntas',
+        itens: [
+          'Captação de 10 vídeos, em duas diárias emendadas de 6 horas',
+          'A edição dos 10 vídeos, de até 10 minutos cada',
+          'Uma data de gravação por mês, sem voltar ao estúdio',
+          'Entrega em MP4, por link, com data sugerida de publicação',
+        ],
+        valor: 3000,
+        periodo: '/mês',
+        rodape: 'No plano anual, R$ 2.800 por ciclo, com permanência de 12 meses.',
       },
     ],
     prazos: [
@@ -180,7 +188,8 @@ export const simoneYoutubeVideoLongo: PropostaData = {
         titulo: 'Condições Gerais',
         itens: [
           'Cada vídeo entregue tem até 10 minutos de duração final. Passou disso, é um vídeo novo, cobrado como unidade adicional.',
-          'A diária é uma visita única e contínua. Quando forem duas no mesmo dia, elas são emendadas e somam 6 horas de gravação.',
+          'A diária cobre a captação, não a edição. Ela entrega até 5 vídeos longos por visita, é uma visita única e contínua, e quando forem duas no mesmo dia elas são emendadas e somam 6 horas de gravação.',
+          'A edição é contratada por vídeo, avulsa ou em pacote fechado de 10. Ela não está inclusa na diária de captação, com uma única exceção: o pacote completo, que já traz a captação de 10 vídeos e a edição dos 10.',
           'Cancelamento ou reagendamento com menos de 48 horas de antecedência perde a diária do mês, sem reposição.',
           'A trilha sonora usada nas edições é licenciada. Uma vez aprovada, não pode ser trocada sem orçamento novo.',
           'O tema, o roteiro e o conteúdo de cada vídeo são de responsabilidade da contratante.',
@@ -193,9 +202,9 @@ export const simoneYoutubeVideoLongo: PropostaData = {
     ],
     pagamento: {
       blocos: [
-        { titulo: 'Vídeos do mês', descricao: 'R$ 297 por vídeo entregue. Quatro vídeos somam R$ 1.188, e oito somam R$ 2.376.' },
-        { titulo: 'Captação', descricao: 'R$ 997 por diária de 3 horas. Duas emendadas no mesmo dia, 6 horas, somam R$ 1.994.' },
-        { titulo: 'Exemplo de mês fechado', descricao: 'Oito vídeos com uma diária dão R$ 3.373 no mês a mês, ou R$ 3.173 no plano anual.' },
+        { titulo: 'Edição, por vídeo', descricao: 'R$ 297 por vídeo entregue. Em pacote fechado de 10, sai por R$ 2.500.' },
+        { titulo: 'Captação, por diária', descricao: 'R$ 997 por diária de 3 horas, com até 5 vídeos longos. Duas emendadas cobrem 10 vídeos e somam R$ 1.994.' },
+        { titulo: 'Pacote completo', descricao: 'A captação de 10 vídeos e a edição dos 10, numa data só por mês, por R$ 3.000. No plano anual, R$ 2.800.' },
         { titulo: 'Deslocamento', descricao: 'Joinville não tem custo. Florianópolis, Curitiba e São Paulo são orçados à parte.' },
       ],
       meios: [
@@ -206,15 +215,15 @@ export const simoneYoutubeVideoLongo: PropostaData = {
     faq: [
       {
         pergunta: 'Quantos vídeos saem por diária?',
-        resposta: 'Depende do quanto você fala sem repetir. Numa diária de 3 horas cabem de 3 a 5 vídeos de 10 minutos. Duas diárias emendadas, somando 6 horas, dão de 6 a 8.',
+        resposta: 'Até 5 vídeos longos de 10 minutos por diária de 3 horas. Cada vídeo precisa de tempo para sair inteiro, sem correria. Duas diárias emendadas cobrem até 10.',
       },
       {
         pergunta: 'Dá para gravar oito vídeos num dia só?',
-        resposta: 'Dá, com duas diárias emendadas, somando 6 horas. Oito é o teto confortável: acima disso a fala cansa e a qualidade do vídeo cai.',
+        resposta: 'Dá, com duas diárias emendadas, somando 6 horas. A conta é sempre de até 5 vídeos por diária, e oito cabe nas duas.',
       },
       {
         pergunta: 'Quanto fica por mês?',
-        resposta: 'Oito vídeos com uma diária ficam R$ 3.373 no mês a mês, ou R$ 3.173 no plano anual. Quatro vídeos com uma diária ficam R$ 2.185.',
+        resposta: 'O pacote completo, com 10 vídeos gravados e editados, fica R$ 3.000 no mês a mês, ou R$ 2.800 no plano anual. Quatro vídeos com uma diária ficam R$ 2.185.',
       },
       {
         pergunta: 'Os cortes para Reels estão inclusos?',
@@ -230,7 +239,7 @@ export const simoneYoutubeVideoLongo: PropostaData = {
       },
       {
         pergunta: 'E se eu quiser mais vídeos num mês?',
-        resposta: 'Cada vídeo extra custa R$ 297, desde que caiba na agenda e na gravação do mês. Acima do que couber na diária, entra uma diária adicional de R$ 997.',
+        resposta: 'Cada vídeo avulso custa R$ 297. Acima de 5 vídeos gravados no mês, entra uma diária adicional de R$ 997.',
       },
       {
         pergunta: 'Existe fidelidade?',
