@@ -463,11 +463,11 @@ html:has(> body.dz-body) { scroll-padding-top: 104px; }
 .dz .dz-plano-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .dz .dz-plano-video figcaption { margin-top: var(--s2); color: var(--muted); font-size: 0.78rem; line-height: 1.35; text-align: center; }
 .dz .dz-conf { margin-top: var(--s6); max-width: 70ch; }
-.dz-combo { margin-top: var(--s6); padding: 22px 24px; border: 1px solid var(--border-strong); border-left: 3px solid var(--gold); border-radius: 14px; background: var(--bg-card); max-width: 74ch; }
+.dz-combo { margin-top: var(--s6); padding: 22px 24px; border: 1px solid var(--border-strong); border-radius: 14px; background: var(--bg-card); max-width: 74ch; }
 .dz-combo-titulo { margin: 0 0 8px; font: 700 1rem/1.25 var(--font-display); color: var(--title); }
 .dz-combo-texto { margin: 0 0 12px; color: var(--muted); font-size: 0.94rem; }
 .dz-combo .dz-dots { margin-top: 0; }
-.dz .dz-nota-planos { margin-top: var(--s5); max-width: 62ch; padding-left: 14px; border-left: 2px solid var(--gold-dim); color: var(--ice); }
+.dz .dz-nota-planos { margin-top: var(--s5); max-width: 62ch; color: var(--muted); }
 @media (max-width: 860px) { .dz .dz-planos { grid-template-columns: minmax(0, 1fr); } }
 
 /* Quem entrega e referências (seções opt-in por proposta) */
