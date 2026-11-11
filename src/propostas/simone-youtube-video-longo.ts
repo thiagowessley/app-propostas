@@ -55,10 +55,11 @@ export const simoneYoutubeVideoLongo: PropostaData = {
   envio: '2026-11-12',
   intro_capa: 'Esta proposta apresenta o vídeo longo para o YouTube da Clínica Recupere, da Dra. Simone Correia, especializada em queda de cabelo e couro cabeludo: pacotes mensais de 4, 8 ou 10 vídeos de até 10 minutos, com a gravação e a edição inclusas. O escopo, o processo, os prazos, as condições e o investimento estão descritos abaixo.',
   valor: {
-    principal: 1997,
+    principal: 1797,
     moeda: 'BRL',
   },
   ctaWhatsapp: 'Confirmar o pacote de vídeo longo',
+  ctaSecundario: { rotulo: 'Prefiro tirar uma dúvida antes', mensagem: 'Oi Thiago, tenho uma dúvida sobre a proposta de vídeo longo' },
 
   foto_profissional: '/img/thiago-vertical.jpg',
   foto_secundaria: '/img/thiago-horizontal.jpg',
@@ -128,44 +129,48 @@ export const simoneYoutubeVideoLongo: PropostaData = {
         nome: 'Pacote de 4 vídeos',
         resumo: 'Entrada no canal',
         itens: [
+          'R$ 449 por vídeo, com a gravação inclusa',
           '4 vídeos de até 10 minutos por mês',
           'Gravação inclusa, numa diária de 3 horas',
           'Edição completa: corte, ritmo, legenda, cor e transição',
           'Entrega de 2 vídeos por semana, fechando em duas semanas',
         ],
-        valor: 1997,
+        valor: 1797,
         periodo: '/mês',
-        rodape: 'No plano anual, R$ 1.797 por mês, com permanência de 12 meses.',
+        rodape: 'Plano de 12 meses. No mês a mês, R$ 1.997.',
       },
       {
         nome: 'Pacote de 8 vídeos',
         resumo: 'Um vídeo novo a cada semana',
         itens: [
+          'R$ 312 por vídeo, com a gravação inclusa',
           '8 vídeos de até 10 minutos por mês',
           'Gravação inclusa, em duas diárias emendadas de 3 horas',
           'Edição completa: corte, ritmo, legenda, cor e transição',
           'Entrega de 2 vídeos por semana, fechando em quatro semanas',
         ],
-        valor: 2797,
+        valor: 2497,
         periodo: '/mês',
-        rodape: 'No plano anual, R$ 2.497 por mês, com permanência de 12 meses.',
+        rodape: 'Plano de 12 meses. No mês a mês, R$ 2.797.',
       },
       {
         nome: 'Pacote de 10 vídeos',
         resumo: 'Canal com dois vídeos por semana',
         itens: [
+          'R$ 270 por vídeo, com a gravação inclusa',
           '10 vídeos de até 10 minutos por mês',
           'Gravação inclusa, em duas diárias emendadas de 3 horas',
           'Edição completa: corte, ritmo, legenda, cor e transição',
           'Entrega de 3 vídeos por semana, fechando em quatro semanas',
         ],
-        valor: 2997,
+        valor: 2697,
         periodo: '/mês',
         destaque: true,
         selo: 'Melhor valor por vídeo',
-        rodape: 'No plano anual, R$ 2.697 por mês, com permanência de 12 meses.',
+        rodape: 'Plano de 12 meses. No mês a mês, R$ 2.997.',
       },
     ],
+    notaPlanos: 'No mercado, editar um vídeo de 10 minutos custa de R$ 600 a R$ 1.200, sem a gravação. Os valores acima já incluem captação e edição.',
     prazos: [
       { texto: 'A diária do mês é agendada com antecedência mínima de 5 dias úteis, conforme disponibilidade.', bold: 'antecedência mínima de 5 dias úteis' },
       { texto: 'A entrega fecha em até quatro semanas: 2 vídeos por semana nos pacotes de 4 e 8, e 3 por semana no pacote de 10.', bold: 'em até quatro semanas' },
@@ -203,8 +208,8 @@ export const simoneYoutubeVideoLongo: PropostaData = {
     ],
     pagamento: {
       blocos: [
-        { titulo: 'Mensalidade do pacote', descricao: 'R$ 1.997 no de 4 vídeos, R$ 2.797 no de 8 e R$ 2.997 no de 10, cobrada no início de cada ciclo. Gravação e edição já estão dentro.' },
-        { titulo: 'Plano anual', descricao: 'R$ 1.797, R$ 2.497 e R$ 2.697 por mês, na mesma ordem, com permanência de 12 meses e valor fixo o ano inteiro.' },
+        { titulo: 'Plano de 12 meses', descricao: 'R$ 1.797 no de 4 vídeos, R$ 2.497 no de 8 e R$ 2.697 no de 10, cobrados por mês, com valor fixo o ano inteiro. Gravação e edição já estão dentro.' },
+        { titulo: 'Mês a mês', descricao: 'R$ 1.997, R$ 2.797 e R$ 2.997 por mês, na mesma ordem, sem permanência contratada.' },
         { titulo: 'Vídeo além do pacote', descricao: 'R$ 297 por vídeo, cobrado junto com a mensalidade do mês em que ele entrar.' },
         { titulo: 'Deslocamento', descricao: 'Joinville não tem custo. Florianópolis, Curitiba e São Paulo são orçados à parte.' },
       ],
@@ -224,7 +229,7 @@ export const simoneYoutubeVideoLongo: PropostaData = {
       },
       {
         pergunta: 'Quanto fica por mês?',
-        resposta: 'R$ 1.997 no pacote de 4 vídeos, R$ 2.797 no de 8 e R$ 2.997 no de 10. No plano anual, R$ 1.797, R$ 2.497 e R$ 2.697, na mesma ordem.',
+        resposta: 'R$ 1.797 no pacote de 4 vídeos, R$ 2.497 no de 8 e R$ 2.697 no de 10, no plano de 12 meses. No mês a mês, R$ 1.997, R$ 2.797 e R$ 2.997, na mesma ordem.',
       },
       {
         pergunta: 'Os cortes para Reels estão inclusos?',
@@ -233,6 +238,14 @@ export const simoneYoutubeVideoLongo: PropostaData = {
       {
         pergunta: 'Quem escreve o roteiro?',
         resposta: 'O tema, o roteiro e a informação são seus. Antes da gravação eu ajudo a definir gancho, ordem da fala e fechamento, mas escrever roteiro não é escopo contratado.',
+      },
+      {
+        pergunta: 'O que eu preciso preparar para o dia da gravação?',
+        resposta: 'Você chega com os temas definidos, que são seus. Eu levo câmera, luz e áudio e cuido do enquadramento e do som. Roupa e cenário a gente combina antes da data.',
+      },
+      {
+        pergunta: 'Vocês emitem nota fiscal?',
+        resposta: 'Sim. A nota fiscal é emitida todo mês junto com a cobrança, no nome da clínica que você indicar.',
       },
       {
         pergunta: 'Posso gravar fora de Joinville?',

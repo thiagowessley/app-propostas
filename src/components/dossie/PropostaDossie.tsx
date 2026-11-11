@@ -436,6 +436,7 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
                     </article>
                   ))}
                 </div>
+                {s.notaPlanos && <p className="dz-valor-note dz-nota-planos">{s.notaPlanos}</p>}
                 {s.confidencialidade && <p className="dz-valor-note dz-conf">{s.confidencialidade}</p>}
               </>
             ) : (
@@ -532,6 +533,11 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
               <a className="dz-cta" href={linkWhats} target="_blank" rel="noopener">
                 <svg aria-hidden="true"><use href="#dz-i-wa" /></svg>{proposta.ctaWhatsapp ?? 'Falar no WhatsApp'}
               </a>
+              {proposta.ctaSecundario && (
+                <a className="dz-cta-sec" href={`https://wa.me/${proposta.contato.whatsapp}?text=${encodeURIComponent(proposta.ctaSecundario.mensagem)}`} target="_blank" rel="noopener">
+                  {proposta.ctaSecundario.rotulo}
+                </a>
+              )}
               <p className="dz-validade">{dias > 0 ? <>Válida até <b>{formatarData(proposta.validade)}</b>, {dias} {dias === 1 ? 'dia' : 'dias'} restantes.</> : 'Proposta vencida.'}</p>
               {d.depois && <p className="dz-depois">{d.depois}</p>}
             </div>

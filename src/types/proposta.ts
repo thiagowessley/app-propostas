@@ -181,6 +181,7 @@ export interface PropostaData {
   mostrarBotaoPdf?: boolean // default false: propostas novas nao expoem download em PDF
   mostrarPortfolio?: boolean // default false: secao de Portfolio fica oculta a menos que a proposta peca
   ctaWhatsapp?: string      // texto do botao principal de WhatsApp no Encerramento. default: "Falar no WhatsApp"
+  ctaSecundario?: { rotulo: string; mensagem: string }   // saida discreta para quem ainda tem duvida, abaixo do botao principal
 
   // perfil do profissional (reutilizavel entre propostas)
   foto_profissional?: string
@@ -199,6 +200,7 @@ export interface PropostaData {
     referencias?: Referencia[]
     faq?: ItemFAQ[]
     primeiros_30_dias?: string[]
+    notaPlanos?: string          // linha de contexto logo abaixo dos cartões de preço (ex: referência de mercado)
     confidencialidade?: string
 
     // redesign: novas secoes da proposta
