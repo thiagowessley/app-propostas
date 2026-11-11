@@ -97,8 +97,8 @@ html:has(> body.dz-body) { scroll-padding-top: 104px; }
 .dz-reel-chapters { list-style: none; margin: 0; padding: 0; height: 100%; display: flex; gap: 3px; }
 .dz-reel-chapters li { position: relative; flex: var(--w, 1) 1 0px; min-width: 0; }
 .dz-reel-chapters a { position: absolute; inset: 0; display: flex; align-items: center; text-decoration: none; }
-.dz-reel-chapters a::before { content: ""; display: block; width: 100%; height: 4px; border-radius: 2px; background: var(--border-strong); transition: height 0.2s var(--ease), background-color 0.2s var(--ease); }
-.dz-reel-chapters a:hover::before, .dz-reel-chapters a:focus-visible::before { height: 8px; background: var(--gold-dim); }
+.dz-reel-chapters a::before { content: ""; display: block; width: 100%; height: 4px; border-radius: 2px; background: var(--border-strong); transform: scaleY(1); transform-origin: center; transition: transform 0.2s var(--ease), background-color 0.2s var(--ease); }
+.dz-reel-chapters a:hover::before, .dz-reel-chapters a:focus-visible::before { transform: scaleY(2); background: var(--gold-dim); }
 .dz-reel-chapters a::after { content: attr(data-t); position: absolute; left: 0; top: calc(50% + 14px); padding: 5px 9px; border-radius: 6px; background: var(--bg-card); box-shadow: 0 0 0 1px var(--border-strong), 0 12px 24px -12px var(--shadow); color: var(--title); font: 500 0.72rem/1.2 var(--font-body); white-space: nowrap; opacity: 0; transform: translateY(-4px); pointer-events: none; transition: opacity 0.2s var(--ease), transform 0.2s var(--ease); z-index: 3; }
 .dz-reel-chapters li:nth-last-child(-n+2) a::after { left: auto; right: 0; }
 .dz-reel-chapters a:hover::after, .dz-reel-chapters a:focus-visible::after { opacity: 1; transform: none; }
