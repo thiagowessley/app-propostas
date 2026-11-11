@@ -17,6 +17,7 @@ import { rafaelBniAftermovie } from './rafael-bni-aftermovie'
 import { dassgLinhaPetMarcaETeste } from './dassg-linha-pet-marca-e-teste'
 import { dudaAcompanhamentoConteudo } from './duda-acompanhamento-conteudo'
 import { simoneDiariaConteudo } from './simone-diaria-conteudo'
+import { simoneYoutubeVideoLongo } from './simone-youtube-video-longo'
 
 export const propostas: Record<string, PropostaData> = {
   instituto,
@@ -37,6 +38,7 @@ export const propostas: Record<string, PropostaData> = {
   dassgLinhaPetMarcaETeste,
   dudaAcompanhamentoConteudo,
   simoneDiariaConteudo,
+  simoneYoutubeVideoLongo,
 }
 
 export function getPropostaBySlug(slug: string): PropostaData | undefined {
