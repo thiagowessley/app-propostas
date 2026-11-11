@@ -325,6 +325,11 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
                   <span className="dz-bold"><PalavrasQueSobem texto={d.titulo.grosso} inicio={d.titulo.fino.split(' ').length} /></span>
                 </h1>
                 <p className="dz-lede">{d.lede}</p>
+                <ul className="dz-capa-strip">
+                  {[d.retrato, ...(d.galeria ?? [])].slice(0, 3).map((img, i) => (
+                    <li key={i}><img src={img.src} alt={img.alt} width={img.largura} height={img.altura} loading="lazy" /></li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
@@ -342,7 +347,7 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
           </div>
         </section>
 
-        <Secao id="cenario" num="01" fino="O cenário" grosso="e o que está em jogo">
+        <Secao id="cenario" num="01" fino="" grosso="Cenário">
           <dl className="dz-facts dz-rv">
             <div><dt>Posicionamento</dt><dd>{s.cenario.problema}</dd></div>
             <div><dt>Público</dt><dd>{s.cenario.publico}</dd></div>
@@ -353,7 +358,7 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
           </dl>
         </Secao>
 
-        <Secao id="projeto" num="02" fino="O projeto" grosso={d.duracao} larga>
+        <Secao id="projeto" num="02" fino="" grosso="O projeto" larga>
           <div className="dz-spectrum dz-rv" ref={linha90}>
             <p className="dz-spec-title">{d.linha.titulo}</p>
             <p className="dz-spec-note">{d.linha.nota}</p>
@@ -399,7 +404,7 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
         </Secao>
 
         {plano && (
-          <Secao id="investimento" num="03" fino="O investimento" grosso="e o que ele cobre" larga={varios}>
+          <Secao id="investimento" num="03" fino="" grosso="Investimento" larga={varios}>
             {varios ? (
               <>
                 {/* Vários planos: cartões lado a lado, com o vídeo de exemplo embaixo de cada um */}
@@ -444,7 +449,7 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
           </Secao>
         )}
 
-        <Secao id="regras" num="04" fino="Prazos" grosso="e regras do projeto">
+        <Secao id="regras" num="04" fino="" grosso="Prazos e regras">
           {s.prazos && (
             <ol className="dz-clausulas dz-rv">
               {s.prazos.map(p => <li key={p.texto}><span><ComNegrito texto={p.texto} bold={p.bold} /></span></li>)}
@@ -460,7 +465,7 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
         </Secao>
 
         {s.pagamento && (
-          <Secao id="pagamento" num="05" fino="Pagamento" grosso="e próximo passo">
+          <Secao id="pagamento" num="05" fino="" grosso="Pagamento">
             <div className="dz-pair dz-rv">
               {s.pagamento.blocos.map(b => (
                 <div key={b.titulo}><h3>{b.titulo}</h3><p>{b.descricao}</p></div>
@@ -472,7 +477,7 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
           </Secao>
         )}
         {s.faq && s.faq.length > 0 && (
-          <Secao id="duvidas" num="06" fino="Dúvidas" grosso="frequentes">
+          <Secao id="duvidas" num="06" fino="" grosso="Dúvidas frequentes">
             <div className="dz-faq">
               {s.faq.map(f => (
                 <details key={f.pergunta} className="dz-faq-item">
@@ -484,7 +489,7 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
           </Secao>
         )}
         {temSobre && proposta.sobre && (
-          <Secao id="sobre" num={numSobre} fino="Quem" grosso="entrega" larga>
+          <Secao id="sobre" num={numSobre} fino="" grosso="Quem entrega" larga>
             <div className="dz-sobre dz-rv">
               {proposta.foto_profissional && (
                 <figure><img src={proposta.foto_profissional} alt="Thiago Wessley" width={843} height={1264} loading="lazy" decoding="async" /></figure>
@@ -499,7 +504,7 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
           </Secao>
         )}
         {temRefs && s.referencias && (
-          <Secao id="referencias" num={numRefs} fino="Referências" grosso="e o que se aplica" larga>
+          <Secao id="referencias" num={numRefs} fino="" grosso="Referências" larga>
             <div className="dz-refs dz-rv">
               {s.referencias.map(r => (
                 <article key={r.nome}>
