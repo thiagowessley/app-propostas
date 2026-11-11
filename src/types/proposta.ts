@@ -66,6 +66,7 @@ export interface PlanoVideo {
 export interface PlanoPreco {
   nome: string           // "Basico", "Completo", "Setup"
   destaque?: boolean     // card central iluminado
+  selo?: string          // texto do selo do card em destaque; sem ele, usa "Mais escolhido"
   resumo: string         // linha de destaque, ex: "12 posts/mes"
   itens: string[]        // bullets do plano
   valor: number          // valor em reais (0 = "sob consulta")

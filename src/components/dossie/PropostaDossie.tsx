@@ -417,7 +417,7 @@ export function PropostaDossie({ proposta }: { proposta: PropostaData }) {
                 <div className="dz-planos dz-rv" style={{ ['--np' as string]: String(planos.length) }}>
                   {planos.map(pl => (
                     <article className={`dz-plano${pl.destaque ? ' dz-plano--on' : ''}`} key={pl.nome}>
-                      {pl.destaque && <span className="dz-plano-badge">Mais escolhido</span>}
+                      {pl.destaque && <span className="dz-plano-badge">{pl.selo ?? 'Mais escolhido'}</span>}
                       <p className="dz-plano-nome">{pl.nome}</p>
                       <p className="dz-plano-resumo">{pl.resumo}</p>
                       <p className="dz-valor dz-valor--card"><ValorComMoeda valor={pl.valor} /></p>

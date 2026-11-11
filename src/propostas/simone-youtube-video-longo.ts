@@ -148,7 +148,7 @@ export const simoneYoutubeVideoLongo: PropostaData = {
         ],
         valor: 2797,
         periodo: '/mês',
-        rodape: 'No plano anual, R$ 2.597 por mês, com permanência de 12 meses.',
+        rodape: 'No plano anual, R$ 2.497 por mês, com permanência de 12 meses.',
       },
       {
         nome: 'Pacote de 10 vídeos',
@@ -161,7 +161,9 @@ export const simoneYoutubeVideoLongo: PropostaData = {
         ],
         valor: 2997,
         periodo: '/mês',
-        rodape: 'No plano anual, R$ 2.797 por mês, com permanência de 12 meses.',
+        destaque: true,
+        selo: 'Melhor valor por vídeo',
+        rodape: 'No plano anual, R$ 2.697 por mês, com permanência de 12 meses.',
       },
     ],
     prazos: [
@@ -202,7 +204,7 @@ export const simoneYoutubeVideoLongo: PropostaData = {
     pagamento: {
       blocos: [
         { titulo: 'Mensalidade do pacote', descricao: 'R$ 1.997 no de 4 vídeos, R$ 2.797 no de 8 e R$ 2.997 no de 10, cobrada no início de cada ciclo. Gravação e edição já estão dentro.' },
-        { titulo: 'Plano anual', descricao: 'R$ 1.797, R$ 2.597 e R$ 2.797 por mês, na mesma ordem, com permanência de 12 meses e valor fixo o ano inteiro.' },
+        { titulo: 'Plano anual', descricao: 'R$ 1.797, R$ 2.497 e R$ 2.697 por mês, na mesma ordem, com permanência de 12 meses e valor fixo o ano inteiro.' },
         { titulo: 'Vídeo além do pacote', descricao: 'R$ 297 por vídeo, cobrado junto com a mensalidade do mês em que ele entrar.' },
         { titulo: 'Deslocamento', descricao: 'Joinville não tem custo. Florianópolis, Curitiba e São Paulo são orçados à parte.' },
       ],
@@ -222,7 +224,7 @@ export const simoneYoutubeVideoLongo: PropostaData = {
       },
       {
         pergunta: 'Quanto fica por mês?',
-        resposta: 'R$ 1.997 no pacote de 4 vídeos, R$ 2.797 no de 8 e R$ 2.997 no de 10. No plano anual, R$ 1.797, R$ 2.597 e R$ 2.797, na mesma ordem.',
+        resposta: 'R$ 1.997 no pacote de 4 vídeos, R$ 2.797 no de 8 e R$ 2.997 no de 10. No plano anual, R$ 1.797, R$ 2.497 e R$ 2.697, na mesma ordem.',
       },
       {
         pergunta: 'Os cortes para Reels estão inclusos?',
