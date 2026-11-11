@@ -27,8 +27,8 @@ export const simoneYoutubeVideoLongo: PropostaData = {
     marcos: [
       { dia: 'Semana 1', nome: 'Pauta e roteiro' },
       { dia: 'Semana 2', nome: 'Diária de captação' },
-      { dia: 'Semana 3', nome: 'Primeira leva editada' },
-      { dia: 'Semana 4', nome: 'Vídeos no canal' },
+      { dia: 'Semana 3', nome: 'Dois vídeos entregues' },
+      { dia: 'Semana 4', nome: 'Duas entregas por semana' },
     ],
     teste: [
       { etapa: 'Pauta', nome: 'Temas e estrutura de fala' },
@@ -166,7 +166,7 @@ export const simoneYoutubeVideoLongo: PropostaData = {
     ],
     prazos: [
       { texto: 'A diária do mês é agendada com antecedência mínima de 5 dias úteis, conforme disponibilidade.', bold: 'antecedência mínima de 5 dias úteis' },
-      { texto: 'Os vídeos são entregues em até 7 dias úteis por lote de até 10 vídeos, contados do fim da captação.', bold: 'em até 7 dias úteis por lote' },
+      { texto: 'Os vídeos longos são entregues 2 por semana, a partir da semana seguinte à captação. Um lote de 10 vídeos fica completo em cinco semanas.', bold: '2 por semana' },
       { texto: 'Nas opções anuais, a permanência é de 12 meses contados a partir da primeira diária.', bold: 'permanência é de 12 meses' },
       prazoAlteracaoVideo(),
     ],
@@ -177,6 +177,7 @@ export const simoneYoutubeVideoLongo: PropostaData = {
           'O pagamento é cobrado no início de cada ciclo, para reserva da agenda.',
           'A diária é agendada depois do pagamento confirmado.',
           'Os vídeos são entregues por link, em MP4, com a data sugerida de publicação.',
+          'O ritmo de entrega é de 2 vídeos por semana, a partir da semana seguinte à captação. O prazo total acompanha o volume contratado.',
           'Nas opções mês a mês não há permanência contratada nem multa de cancelamento.',
           'Nas opções anuais, o contrato tem permanência de 12 meses, com multa de 50% sobre as mensalidades restantes em caso de cancelamento antecipado.',
         ],
@@ -239,6 +240,10 @@ export const simoneYoutubeVideoLongo: PropostaData = {
         resposta: 'Cada vídeo avulso custa R$ 297. Acima de 5 vídeos gravados no mês, entra uma diária adicional de R$ 997.',
       },
       {
+        pergunta: 'Quando os vídeos ficam prontos?',
+        resposta: '2 por semana, a partir da semana seguinte à captação. Um lote de 10 vídeos fica completo em cinco semanas.',
+      },
+      {
         pergunta: 'Existe fidelidade?',
         resposta: 'Depende do plano. O mês a mês não tem permanência. O plano anual tem permanência de 12 meses, com multa de 50% sobre as mensalidades restantes em caso de cancelamento antecipado.',
       },
@@ -246,8 +251,8 @@ export const simoneYoutubeVideoLongo: PropostaData = {
     primeiros_30_dias: [
       'Semana 1: temas e estrutura de fala definidos, diária agendada',
       'Semana 2: diária de captação',
-      'Semana 3: primeira leva editada e entregue',
-      'Semana 4: restante dos vídeos no canal',
+      'Semana 3: os dois primeiros vídeos entregues',
+      'Semana 4: mais dois vídeos, e o ritmo segue até fechar o lote',
     ],
     confidencialidade: 'Esta proposta é confidencial e destinada exclusivamente à Dra. Simone Correia. Validade de 7 dias corridos a partir da data de envio. Preços sujeitos a atualização após o vencimento.',
     encerramento: encerramentoPadrao('o escopo, o processo e o investimento'),
