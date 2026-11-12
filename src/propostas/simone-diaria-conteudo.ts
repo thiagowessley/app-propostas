@@ -1,8 +1,28 @@
 import type { PropostaData } from '../types/proposta'
-import { SOBRE_PADRAO, encerramentoPadrao, regraAlteracaoVideo, prazoAlteracaoVideo } from '../lib/copy-padrao'
+import { SOBRE_PADRAO, encerramentoPadrao } from '../lib/copy-padrao'
+import {
+  MARCOS_DO_MES,
+  PRIMEIROS_30_DIAS,
+  TESTE_DO_MES,
+  contratoConteudoMensal,
+  faqConteudoMensal,
+  faseCaptacaoMensal,
+  faseEdicaoMensal,
+  fasePautaMensal,
+  prazosConteudoMensal,
+  formatarReais,
+  PERFIS_CLIENTE_CONTEUDO,
+} from '../lib/conteudo-mensal'
 
-// Diária de conteúdo em vídeo, com dois níveis de edição (básica e avançada).
-// Área de atuação da cliente não é mencionada na proposta, por decisão do Thiago em 10/11/2026.
+// Entrega de conteúdo mensal em vídeo, com dois níveis de edição (básica e avançada).
+// A narrativa vende o MÊS, não a diária: o bloco de captação é como o mês é
+// produzido, não o que a cliente compra. Decisão do Thiago em 12/11/2026.
+// Área de atuação da cliente não é mencionada na proposta, por decisão de 10/11/2026.
+// Perfil: profissional que fala na câmera, com equipe e unidades no caso dela.
+
+const TAXA_UNIDADE_FORA = 500
+const VALOR_BLOCO_EXTRA = 1497
+
 export const simoneDiariaConteudo: PropostaData = {
   slug: 'simone-diaria-conteudo',
   estilo: 'dossie',
@@ -12,30 +32,19 @@ export const simoneDiariaConteudo: PropostaData = {
       { src: '/img/portfolio/camila-oliveira.jpg', alt: 'Profissional em vídeo de depoimento', largura: 405, altura: 720, foco: '50% 26%' },
       { src: '/img/portfolio/patricia-gurgel.jpg', alt: 'Profissional em vídeo curto de conteúdo', largura: 405, altura: 720, foco: '50% 30%' },
     ],
-    titulo: { fino: 'Dra. Simone Correia:', grosso: 'captação e edição de vídeo todo mês, com vídeo novo no ar mesmo em semana cheia.' },
-    lede: 'Uma visita de captação de até 3 horas por mês e a edição dos vídeos, no nível que você escolher. Você grava tudo de uma vez, e eu devolvo pronto pra postar.',
+    titulo: { fino: 'Dra. Simone Correia:', grosso: 'conteúdo novo no ar todo mês, sem parar o atendimento pra produzir.' },
+    lede: 'Um ciclo por mês: a pauta fechada com você, um bloco de captação de até 3 horas e a edição no nível que você escolher. Você grava tudo de uma vez e recebe o mês pronto pra publicar.',
     documento: 'Proposta comercial',
     duracao: 'a cada mês',
     base: { provas: [], produtos: [] },
     linha: {
-      titulo: 'Um mês, da pauta ao vídeo no ar',
-      nota: 'O ciclo se repete todo mês. A diária é agendada com pelo menos 5 dias úteis de antecedência, e os primeiros vídeos chegam na semana seguinte à captação.',
+      titulo: 'Um mês, da pauta ao conteúdo no ar',
+      nota: 'O ciclo se repete todo mês. A captação é agendada com pelo menos 5 dias úteis de antecedência, e os primeiros vídeos chegam na semana seguinte.',
       inicio: 'Pauta do mês',
       fim: 'Conteúdo no ar',
     },
-    marcos: [
-      { dia: 'Semana 1', nome: 'Pauta e agenda' },
-      { dia: 'Semana 2', nome: 'Diária de captação' },
-      { dia: 'Semana 3', nome: 'Primeiros vídeos' },
-      { dia: 'Semana 4', nome: 'Conteúdo no ar' },
-    ],
-    teste: [
-      { etapa: 'Pauta', nome: 'Temas e roteiro, seus' },
-      { etapa: 'Diária', nome: 'Visita única e contínua' },
-      { etapa: 'Edição', nome: 'Corte, legenda e acabamento' },
-      { etapa: 'Entrega', nome: 'Por link, em MP4' },
-      { etapa: 'Publicação', nome: 'No ritmo que você escolher' },
-    ],
+    marcos: MARCOS_DO_MES,
+    teste: TESTE_DO_MES,
     videos: [
       { youtubeId: 'qMZPZTCJ8S8', titulo: 'Exemplo de edição: conteúdo para redes', poster: '/img/portfolio/patricia-gurgel.jpg' },
       { youtubeId: 'w-TK32qXD4M', titulo: 'Exemplo de edição: podcast em cortes', poster: '/img/portfolio/video-podcast-fabiana-golembiewski.jpg' },
@@ -48,21 +57,21 @@ export const simoneDiariaConteudo: PropostaData = {
       { tipo: 'videos', titulo: 'Padrão de edição', legenda: 'Exemplo de vídeo editado no formato Reels.' },
     ],
     secoesExtras: ['sobre'],
-    fecho: 'Vídeo no ar todo mês, sem tirar você do atendimento.',
-    depois: 'Depois do primeiro mês, a diária extra cobre lançamento, campanha ou semana de evento fora do calendário.',
+    fecho: 'Um mês inteiro de conteúdo no ar, sem tirar você do atendimento.',
+    depois: 'Depois do primeiro mês, o bloco extra cobre lançamento, campanha ou semana de evento fora do calendário.',
   },
   cliente: 'Dra. Simone Correia',
   segmento: 'Clínica de tricologia, Joinville e Florianópolis/SC',
-  servico: 'Diária de Conteúdo em Vídeo',
+  servico: 'Conteúdo Mensal em Vídeo',
   responsavel: 'Dra. Simone Correia',
   validade: '2026-11-17',
   envio: '2026-11-10',
-  intro_capa: 'Esta proposta apresenta a diária de conteúdo em vídeo pra Clínica Recupere, da Dra. Simone Correia, especializada em queda de cabelo e couro cabeludo: uma visita de captação de até 3 horas por mês, com os vídeos editados e entregues prontos pra postar. São duas opções de edição, básica e avançada, com escopo, processo, prazos, condições e investimento descritos abaixo.',
+  intro_capa: 'Esta proposta apresenta a entrega de conteúdo mensal em vídeo pra Clínica Recupere, da Dra. Simone Correia, especializada em queda de cabelo e couro cabeludo: um bloco de captação de até 3 horas por mês, com os vídeos editados e entregues prontos pra publicar ao longo do mês. São dois níveis de edição, básica e avançada, com escopo, processo, prazos, condições e investimento descritos abaixo.',
   valor: {
     principal: 797,
     moeda: 'BRL',
   },
-  ctaWhatsapp: 'Agendar a diária de conteúdo',
+  ctaWhatsapp: 'Começar o conteúdo do mês',
 
   foto_profissional: '/img/thiago-vertical.jpg',
   foto_secundaria: '/img/thiago-horizontal.jpg',
@@ -73,71 +82,36 @@ export const simoneDiariaConteudo: PropostaData = {
     cenario: {
       problema: 'Queda de cabelo e problema de couro cabeludo levam a pessoa a pesquisar muito antes de marcar uma avaliação. Ela vê dezenas de perfis, compara explicações e decide por quem mostra segurança no assunto. Perfil parado há semanas some dessa comparação.',
       publico: 'Homens e mulheres com queda de cabelo, alopecia ou alteração no couro cabeludo, que pesquisam no Instagram e no YouTube antes de agendar uma avaliação na Recupere.',
-      desafio: 'Explicar tricologia em vídeo com constância, sem virar produtora do próprio conteúdo e sem tirar tempo do atendimento nas unidades.',
+      desafio: 'Sustentar explicação de tricologia em vídeo toda semana, sem virar produtora do próprio conteúdo e sem tirar tempo do atendimento nas unidades.',
       entregas: [
-        'Um bloco de gravação por mês, com vídeo pra até a próxima diária',
-        'Explicação de tricologia em linguagem de quem está começando a pesquisar, não de quem já é da área',
+        'Conteúdo até a próxima captação: o mês começa com vídeo pronto, sem depender de sobrar tempo na agenda',
+        'Uma captação rendendo vários vídeos, em vez de um vídeo por ideia',
         'O mesmo material servindo Instagram e YouTube, sem gravar duas vezes',
-        'Primeiros vídeos no ar na semana seguinte à diária',
+        'Perfil ativo enquanto você atende: quem pesquisa encontra conteúdo deste mês',
       ],
     },
     fases: [
-      {
-        numero: '01',
-        titulo: 'Pauta e agenda',
-        periodo: 'ANTES DA DIÁRIA',
-        resumo: 'Ao fim da fase, a pauta do mês está fechada e a diária tem data.',
-        itens: [
-          { titulo: 'Temas e roteiro', descricao: 'Você chega com os assuntos do mês, e o conteúdo técnico é todo seu.' },
-          { titulo: 'Apoio de estrutura', descricao: 'Oriento o que ajuda o vídeo a performar: gancho, ordem da fala, tom de voz e postura. O conteúdo continua seu.' },
-          { titulo: 'Agendamento', descricao: 'Data marcada com pelo menos 5 dias úteis de antecedência, dentro da agenda do mês.' },
-        ],
-      },
-      {
-        numero: '02',
-        titulo: 'Diária de captação',
-        periodo: 'DIA COMBINADO',
-        resumo: 'Ao fim da fase, o material do mês está gravado.',
-        itens: [
-          { titulo: 'Captação em vídeo', descricao: 'Uma visita única, no espaço que combinarmos, com a câmera rodando por até 3 horas.', limite: 'visita única, até 3 horas' },
-          { titulo: 'Quantos vídeos couberem', descricao: 'O limite é o tempo da diária, não um número fechado de peças. Encerra quando você sentir que já é suficiente.' },
-          { titulo: 'Direção de fala', descricao: 'Conduzo cada gravação pra sair natural e direto ao ponto, sem repetir tomada atrás de tomada.' },
-        ],
-      },
+      fasePautaMensal(),
+      faseCaptacaoMensal('02', 'no espaço que combinarmos'),
       {
         numero: '03',
-        titulo: 'Estilos de vídeo que entram',
-        periodo: 'DURANTE A DIÁRIA',
-        resumo: 'Os cinco formatos abaixo cabem na mesma diária, combinados na pauta do mês. Nenhum deles usa imagem de paciente.',
-        itens: [
-          { titulo: 'Fala direta', descricao: 'Você explica um tema olhando pra câmera, em vídeo curto de 30 a 60 segundos.' },
-          { titulo: 'Resposta a dúvida', descricao: 'A pergunta que mais se repete no seu atendimento, respondida em vídeo.' },
-          { titulo: 'Como é a avaliação', descricao: 'O passo a passo da consulta e do exame do couro cabeludo, pra tirar o medo de quem nunca passou por isso.' },
-          { titulo: 'Quem atende', descricao: 'Apresentação da equipe, com nome e função, pra pessoa saber com quem vai falar.' },
-          { titulo: 'Tour pelo espaço', descricao: 'Apresentação do lugar em plano aberto, pra quem quer conhecer antes de chegar.' },
-        ],
+        titulo: 'Formatos que entram no mês',
+        periodo: 'DURANTE A CAPTAÇÃO',
+        resumo:
+          'Os formatos abaixo cabem na mesma captação, combinados na pauta do mês. Nenhum deles usa imagem de paciente.',
+        itens: PERFIS_CLIENTE_CONTEUDO.profissional.formatos,
       },
-      {
-        numero: '04',
-        titulo: 'Edição e entrega',
-        periodo: 'APÓS A DIÁRIA',
-        resumo: 'Ao fim da fase, cada vídeo está pronto pra postar, organizado por semana.',
-        itens: [
-          { titulo: 'Edição no nível escolhido', descricao: 'Na básica: corte, legenda, cor e transição. Na avançada, entra também efeito sonoro, animação e b-roll.' },
-          { titulo: 'Organização por semana', descricao: 'Tudo entregue já separado pro mês, sem você gastar tempo planejando a ordem.' },
-          { titulo: 'Entrega escalonada', descricao: 'Por link, em MP4. Os primeiros vídeos chegam enquanto o resto ainda está em edição.', limite: 'primeiros vídeos na 1ª semana' },
-        ],
-      },
+      faseEdicaoMensal('04'),
     ],
     planos: [
       {
         nome: 'Edição Básica',
-        resumo: 'Captação e edição essencial',
+        resumo: 'O mês de conteúdo, com edição essencial',
         itens: [
-          '1 diária de captação por mês, visita única de até 3 horas',
-          'Quantidade de vídeos livre dentro do tempo da diária',
+          'O mês inteiro de conteúdo, gravado em um bloco de captação de até 3 horas',
+          'Quantos vídeos couberem no bloco, sem número fechado de peças',
           'Edição básica: corte, legenda, cor e transição',
-          'Primeiros vídeos na semana seguinte à diária',
+          'Primeiros vídeos na semana seguinte à captação, o restante ao longo do mês',
           'Permanência de 12 meses, com valor fixo o ano inteiro',
         ],
         valor: 797,
@@ -147,10 +121,10 @@ export const simoneDiariaConteudo: PropostaData = {
       },
       {
         nome: 'Edição Avançada',
-        resumo: 'Captação e edição com acabamento',
+        resumo: 'O mês de conteúdo, com acabamento completo',
         itens: [
-          '1 diária de captação por mês, visita única de até 3 horas',
-          'Quantidade de vídeos livre dentro do tempo da diária',
+          'O mês inteiro de conteúdo, gravado em um bloco de captação de até 3 horas',
+          'Quantos vídeos couberem no bloco, sem número fechado de peças',
           'Edição avançada: tudo da básica mais efeito sonoro, animação e b-roll',
           'Banco de imagens e vídeos de apoio incluso, quando você não tiver material próprio',
           'Permanência de 12 meses, com valor fixo o ano inteiro',
@@ -161,92 +135,45 @@ export const simoneDiariaConteudo: PropostaData = {
         video: { youtubeId: 'JNHSNxgJT1s', label: 'Exemplo de edição avançada: Camila Oliveira' },
       },
     ],
-    prazos: [
-      { texto: 'A diária do mês é agendada com antecedência mínima de 5 dias úteis, conforme disponibilidade.', bold: 'antecedência mínima de 5 dias úteis' },
-      { texto: 'Nas opções anuais, a permanência é de 12 meses contados a partir da primeira diária.', bold: 'permanência é de 12 meses' },
-      { texto: 'Os primeiros vídeos são entregues na semana seguinte à diária; o restante segue em edição e chega ao longo do mês.', bold: 'na semana seguinte à diária' },
-      prazoAlteracaoVideo(),
-    ],
-    contrato: [
-      {
-        titulo: 'Contrato e Entrega',
-        itens: [
-          'O pagamento é cobrado no início de cada ciclo, para reserva da agenda.',
-          'A diária é agendada depois do pagamento confirmado.',
-          'Os vídeos são entregues por link, em MP4, organizados por semana.',
-          'Nas opções mês a mês não há permanência contratada nem multa de cancelamento.',
-          'Nas opções anuais, o contrato tem permanência de 12 meses, com multa de 50% sobre as mensalidades restantes em caso de cancelamento antecipado.',
-        ],
-      },
-      {
-        titulo: 'Condições Gerais',
-        itens: [
-          'A diária é uma visita única e contínua de até 3 horas, sem fracionamento em mais de um encontro no mesmo dia. Encerrar antes do tempo não gera crédito nem horas a compensar em outra data.',
-          'Cada vídeo entregue sai em formato Reels ou Shorts, de até 1 minuto e 30 segundos. Vídeo longo é outro serviço, orçado à parte.',
-          'Cancelamento ou reagendamento com menos de 48 horas de antecedência perde a diária do mês, sem reposição.',
-          'A trilha sonora usada nas edições é licenciada, sem risco de direito autoral. Uma vez aprovada, não pode ser trocada sem orçamento novo.',
-          'O tema, o roteiro e o conteúdo de cada vídeo são de responsabilidade da contratante.',
-          'A diária acontece em Joinville, sem custo de deslocamento. Nas demais unidades (Florianópolis, Curitiba e São Paulo), o deslocamento é orçado à parte, com passagem, hospedagem e alimentação por conta da contratante.',
-          'O conteúdo respeita as regras de publicidade médica: sem antes e depois, sem promessa de resultado e sem imagem de paciente.',
-          regraAlteracaoVideo(1),
-        ],
-      },
-    ],
+    prazos: prazosConteudoMensal(),
+    contrato: contratoConteudoMensal({
+      local: 'Joinville',
+      deslocamento: `A captação em Joinville não tem custo de deslocamento. Nas demais unidades, cada captação custa ${formatarReais(TAXA_UNIDADE_FORA)}, taxa fixa que cobre a ida e a volta, com data combinada junto com a agenda do mês.`,
+      regraDeSetor:
+        'O conteúdo respeita as regras de publicidade médica: sem antes e depois, sem promessa de resultado e sem imagem de paciente.',
+      rodadasAjuste: 1,
+    }),
     pagamento: {
       blocos: [
-        { titulo: 'Mensalidade', descricao: 'Cobrada no início de cada ciclo, via Pix ou transferência. Inclui 1 diária de captação por mês e a edição dos vídeos no nível escolhido.' },
-        { titulo: 'Diária Extra', descricao: 'R$ 1.497 por diária avulsa além da já incluída no mês, cobrada na data da captação.' },
+        { titulo: 'Conteúdo do mês', descricao: 'Cobrado no início de cada ciclo, via Pix ou transferência. Inclui um bloco de captação de até 3 horas por mês e a edição dos vídeos no nível escolhido.' },
+        { titulo: 'Bloco extra', descricao: `${formatarReais(VALOR_BLOCO_EXTRA)} por captação avulsa além da já incluída no mês, cobrada na data da captação.` },
+        { titulo: 'Captação fora de Joinville', descricao: `${formatarReais(TAXA_UNIDADE_FORA)} por captação, taxa fixa que cobre a ida e a volta, cobrada junto com a mensalidade.` },
       ],
       meios: [
         { nome: 'Pix', detalhe: 'Transferência instantânea' },
         { nome: 'Transferência', detalhe: 'Depósito em conta corrente' },
       ],
     },
-    faq: [
-      {
-        pergunta: 'Quantos vídeos saem por diária?',
-        resposta: 'Não tem número fechado. O limite é o tempo da diária, de até 3 horas de captação: quantos vídeos couberem nesse bloco, todos editados e prontos pra postar.',
-      },
-      {
-        pergunta: 'Qual a diferença entre a edição básica e a avançada?',
-        resposta: 'A básica entrega corte, legenda, cor e transição. A avançada soma efeito sonoro, animação e b-roll, com banco de imagens incluso quando você não tiver material de apoio próprio.',
-      },
-      {
-        pergunta: 'Os vídeos servem pro YouTube também?',
-        resposta: 'Sim, em formato Shorts, com o mesmo teto de 1 minuto e 30 segundos. Vídeo longo de YouTube é outro serviço, com escopo e valor próprios.',
-      },
-      {
-        pergunta: 'A diária pode ser dividida em dois dias ou dois horários?',
-        resposta: 'Não. A diária é uma visita única e contínua. Isso mantém o formato de prestação de serviço combinado, e não uma disponibilidade fracionada ao longo do dia.',
-      },
-      {
-        pergunta: 'Quem escreve o roteiro dos vídeos?',
-        resposta: 'O tema, o roteiro e o conteúdo são seus. Durante a gravação eu oriento estrutura, gancho, tom de voz e postura pro vídeo performar melhor, mas escrever roteiro não é escopo contratado.',
-      },
-      {
-        pergunta: 'E se eu precisar de mais de uma diária no mês?',
-        resposta: 'O plano já inclui uma. Cada diária extra custa R$ 1.497, com prioridade na agenda por já ser cliente, e é cobrada na data da captação.',
-      },
-      {
-        pergunta: 'Existe fidelidade?',
-        resposta: 'Depende do plano. As opções mês a mês não têm permanência. As opções anuais têm permanência de 12 meses, com multa de 50% sobre as mensalidades restantes em caso de cancelamento antecipado.',
-      },
-      {
-        pergunta: 'Quando a diária é agendada?',
-        resposta: 'Depois do pagamento confirmado, com pelo menos 5 dias úteis de antecedência, conforme a disponibilidade da agenda.',
-      },
-    ],
-    primeiros_30_dias: [
-      'Semana 1: pauta do mês fechada e diária agendada',
-      'Semana 2: diária de captação e início da edição',
-      'Semana 3: primeiros vídeos entregues e publicados',
-      'Semana 4: restante do conteúdo entregue, conteúdo do mês no ar',
-    ],
+    faq: faqConteudoMensal({
+      valorBlocoExtra: VALOR_BLOCO_EXTRA,
+      extras: [
+        {
+          pergunta: 'E nas outras unidades, como funciona?',
+          resposta: `A captação em Joinville não tem custo de deslocamento. Em Florianópolis, Curitiba ou São Paulo, a taxa é fixa de R$ ${TAXA_UNIDADE_FORA} por captação, cobrindo a ida e a volta, com a data combinada junto com a agenda do mês.`,
+        },
+        {
+          pergunta: 'E vídeo longo pro YouTube, vocês gravam?',
+          resposta:
+            'É outro serviço. Vídeo de 10 a 20 minutos tem roteiro antes, mais tempo de gravação e bem mais edição, e sai em proposta própria, com preço por pacote de volume.',
+        },
+      ],
+    }),
+    primeiros_30_dias: PRIMEIROS_30_DIAS,
     confidencialidade: 'Esta proposta é confidencial e destinada exclusivamente à Dra. Simone Correia. Validade de 7 dias corridos a partir da data de envio. Preços sujeitos a atualização após o vencimento.',
     encerramento: encerramentoPadrao('o escopo, o processo e o investimento'),
   },
   utm_copy: {
-    whatsapp: 'Segue a proposta da diária de conteúdo em vídeo.',
+    whatsapp: 'Segue a proposta do conteúdo mensal em vídeo.',
     default: '',
   },
   contato: {
