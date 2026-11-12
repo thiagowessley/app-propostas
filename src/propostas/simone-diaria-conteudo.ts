@@ -138,7 +138,7 @@ export const simoneDiariaConteudo: PropostaData = {
     prazos: prazosConteudoMensal(),
     contrato: contratoConteudoMensal({
       local: 'Joinville',
-      deslocamento: `A captação em Joinville não tem custo de deslocamento. Nas demais unidades, cada captação custa ${formatarReais(TAXA_UNIDADE_FORA)}, taxa fixa que cobre a ida e a volta, com data combinada junto com a agenda do mês.`,
+      deslocamento: `A captação em Joinville não tem custo de deslocamento. Em Florianópolis, a taxa é fixa de ${formatarReais(TAXA_UNIDADE_FORA)} por captação, cobrindo a ida e a volta. Curitiba e São Paulo são orçadas à parte, com passagem, hospedagem e alimentação por conta da contratante.`,
       regraDeSetor:
         'O conteúdo respeita as regras de publicidade médica: sem antes e depois, sem promessa de resultado e sem imagem de paciente.',
       rodadasAjuste: 1,
@@ -147,7 +147,7 @@ export const simoneDiariaConteudo: PropostaData = {
       blocos: [
         { titulo: 'Conteúdo do mês', descricao: 'Cobrado no início de cada ciclo, via Pix ou transferência. Inclui um bloco de captação de até 3 horas por mês e a edição dos vídeos no nível escolhido.' },
         { titulo: 'Bloco extra', descricao: `${formatarReais(VALOR_BLOCO_EXTRA)} por captação avulsa além da já incluída no mês, cobrada na data da captação.` },
-        { titulo: 'Captação fora de Joinville', descricao: `${formatarReais(TAXA_UNIDADE_FORA)} por captação, taxa fixa que cobre a ida e a volta, cobrada junto com a mensalidade.` },
+        { titulo: 'Captação em Florianópolis', descricao: `${formatarReais(TAXA_UNIDADE_FORA)} por captação, taxa fixa que cobre a ida e a volta, cobrada junto com a mensalidade. Curitiba e São Paulo são orçadas à parte.` },
       ],
       meios: [
         { nome: 'Pix', detalhe: 'Transferência instantânea' },
@@ -159,7 +159,7 @@ export const simoneDiariaConteudo: PropostaData = {
       extras: [
         {
           pergunta: 'E nas outras unidades, como funciona?',
-          resposta: `A captação em Joinville não tem custo de deslocamento. Em Florianópolis, Curitiba ou São Paulo, a taxa é fixa de R$ ${TAXA_UNIDADE_FORA} por captação, cobrindo a ida e a volta, com a data combinada junto com a agenda do mês.`,
+          resposta: `A captação em Joinville não tem custo de deslocamento. Em Florianópolis, a taxa é fixa de ${formatarReais(TAXA_UNIDADE_FORA)} por captação, cobrindo a ida e a volta. Curitiba e São Paulo são orçadas à parte, com passagem, hospedagem e alimentação por conta da contratante.`,
         },
         {
           pergunta: 'E vídeo longo pro YouTube, vocês gravam?',
